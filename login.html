@@ -14,40 +14,45 @@
 
 <body>
     <div class="container">
-        <form class="form ", id="login">
+        <form class="form " , id="login">
             <h1 class="form_title">Login</h1>
             <div class="form-message form-message_error"></div>
             <div class="form-input_group">
-                <input type="text" class = "form-input form-input_error" autofocus placeholder="Username or email">
+                <input type="text" id="loginUsername" class="form-input form-input_error" autofocus
+                    placeholder="Username or email">
                 <div class="form-input_error_message"></div>
             </div>
             <div class="form-input_group">
-                <input type="password" class = "form-input form-input_error" autofocus placeholder="Password">
+                <input type="password" id="loginPassword" class="form-input form-input_error" autofocus
+                    placeholder="Password">
                 <div class="form-input_error_message"></div>
             </div>
-            <button class = "form-button" type="submit">Continue</button>
-            <p class = "form_text">
-                <a id="linkCreateAccount" href= "./" class = "form_link">Don't have account? Register.</a>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form_text">
+                <a id="linkCreateAccount" href="./" class="form_link">Don't have account? Register.</a>
             </p>
         </form>
-        <form class="form form-hidden", id="createAccount">
+        <form class="form form-hidden" , id="createAccount">
             <h1 class="form_title">Create Account</h1>
             <div class="form-message form-message_error"></div>
             <div class="form-input_group">
-                <input type="text" id = "signupUsername"class = "form-input form-input_error" autofocus placeholder="Username">
+                <input type="text" id="signupUsername" class="form-input form-input_error" autofocus
+                    placeholder="Username">
                 <div class="form-input_error_message"></div>
             </div>
             <div class="form-input_group">
-                <input type="text" id = "signupEmail"class = "form-input form-input_error" autofocus placeholder="Email address">
+                <input type="text" id="signupEmail" class="form-input form-input_error" autofocus
+                    placeholder="Email address">
                 <div class="form-input_error_message"></div>
             </div>
             <div class="form-input_group">
-                <input type="password" id = "signupPassword" class = "form-input form-input_error" autofocus placeholder="Password">
+                <input type="password" id="signupPassword" class="form-input form-input_error" autofocus
+                    placeholder="Password">
                 <div class="form-input_error_message"></div>
             </div>
-            <button class = "form-button" type="submit">Register</button>
-            <p class = "form_text">
-                <a id="linkLogin" href= "./" class = "form_link">All ready have an account? Sign in</a>
+            <button class="form-button" type="submit">Register</button>
+            <p class="form_text">
+                <a id="linkLogin" href="./" class="form_link">All ready have an account? Sign in</a>
             </p>
         </form>
     </div>

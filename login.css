@@ -1,9 +1,8 @@
-
-body{
+body {
     --color-primary: #009579;
 
     --color-error: rgb(249, 57, 57);
-    --color-success:rgb(57, 239, 57);
+    --color-success: rgb(57, 239, 57);
     --border-radius: 4px;
 
     margin: 0;
@@ -19,7 +18,7 @@ body{
 }
 
 
-.container{
+.container {
     width: 400px;
     height: 400px;
     margin: 1rem;
@@ -32,15 +31,15 @@ body{
 
 .container,
 .form,
-.form-button{
+.form-button {
     font: 500 1rem 'Quicksand', sans-serif;
 }
 
-.form:first-child{
+.form:first-child {
     margin-top: 0px;
 }
 
-.form:last-child{
+.form:last-child {
     margin-bottom: 0px;
 }
 
@@ -49,19 +48,19 @@ body{
     margin-bottom: 1rem;
 }
 
-.form-message_error{
+.form-message_error {
     background: var(--color-error);
 }
 
-.form-message_success{
+.form-message_success {
     background: var(--color-success);
 }
 
-.form-input_group{
+.form-input_group {
     margin-bottom: 1rem;
 }
 
-.form-input{
+.form-input {
     display: block;
     width: 100%;
     padding: 15px;
@@ -78,18 +77,18 @@ body{
     background: #ffffff;
 }
 
-.form-input_error{
+.form-input_error {
     color: var(--color-error);
     border-color: var(--color-error);
 }
 
-.form-input_error_message{
+.form-input_error_message {
     margin-top: 10px;
     font-size: 10px;
     color: var(--color-error);
 }
 
-.form-button{
+.form-button {
     width: 100%;
     padding: 1rem 2rem;
     font-weight: bold;
@@ -103,24 +102,24 @@ body{
     transition: transform 0.2s;
 }
 
-.form-button:hover{
+.form-button:hover {
     transform: translateY(-5px);
 }
 
-.form-button:active{
+.form-button:active {
     transform: scale(0.98);
 }
 
-.form_text{
+.form_text {
     text-align: center;
 
 }
 
-.form_title{
+.form_title {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
 
-.form-hidden{
+.form-hidden {
     display: none;
 }
