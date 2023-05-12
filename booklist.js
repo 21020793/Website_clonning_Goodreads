@@ -5,7 +5,7 @@ function createBookElements(book) {
 
     // Tạo phần tử hình ảnh
     const imageElement = document.createElement("img");
-    imageElement.src = book.imageUrl;
+    imageElement.src = book.image;
 
     // Tạo phần tử tiêu đề sách
     const titleElement = document.createElement("h4");
@@ -37,6 +37,18 @@ function createBookElements(book) {
     bookElement.appendChild(titleElement);
     bookElement.appendChild(ratingElement);
 
+    // thêm sự kiện click vào phần tử sách
+    bookElement.setAttribute('data-book-id', book.id);
+
+    bookElement.addEventListener('click', function () {
+        const bookId = this.getAttribute('data-book-id');
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('book_id', bookId);
+        const newUrl = `${window.location.origin}/book_info.html?${urlParams.toString()}`;
+        window.location.href = newUrl;
+    });
+
+
     return bookElement;
 }
 
@@ -62,8 +74,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 async function getBookList(id) {
-    const url = 'booklist.php';
-    const params = 'id=' + id;
+    const url = 'getBooks.php';
+    const params = 'id=' + id + '&type=list';
 
     try {
         const response = await fetch(url, {
@@ -82,7 +94,7 @@ async function getBookList(id) {
         const bookElements = [];
 
         bookList.forEach((book, index) => {
-            if (index > 9) return;
+            if (index > 4) return;
             const bookElement = createBookElements(book);
             bookElements.push(bookElement);
         });
