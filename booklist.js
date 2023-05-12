@@ -16,17 +16,18 @@ function createBookElements(book) {
     ratingElement.classList.add("rating");
 
     // Tạo các phần tử sao cho đánh giá
-    for (let i = 0; i < book.rate - 0.5; i++) {
+    var temp = Math.round(book.rate * 2) / 2;
+    for (let i = 0; i < Math.floor(temp); i++) {
         const starElement = document.createElement("i");
         starElement.classList.add("fa", "fa-star");
         ratingElement.appendChild(starElement);
     }
-    if (book.rate % 1 !== 0) {
+    if (temp % 1 !== 0) {
         const starElement = document.createElement("i");
         starElement.classList.add("fa", "fa-star-half-o");
         ratingElement.appendChild(starElement);
     }
-    for (let i = 0; i < 4.5 - book.rate; i++) {
+    for (let i = 0; i < 5 - Math.ceil(temp); i++) {
         const starElement = document.createElement("i");
         starElement.classList.add("fa", "fa-star-o");
         ratingElement.appendChild(starElement);
