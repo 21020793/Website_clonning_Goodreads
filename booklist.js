@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const newlyReleased = bookContainerList[1];
 
         const featuredBookList = await getBookList("Featured");
-        const newlyReleasedBookList = await getBookList("4");
+        const newlyReleasedBookList = await getBookList("New");
 
         featuredBookList.forEach((bookElement) => {
             featured.appendChild(bookElement);

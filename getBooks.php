@@ -39,6 +39,8 @@ function getBookListById($id)
 
     if ($id == "Featured") {
         $sql = "SELECT * FROM books ORDER BY rating DESC LIMIT 10";
+    } else if ($id == "New") {
+        $sql = "SELECT * FROM books ORDER BY date_added DESC LIMIT 10";
     } else {
         $sql = "SELECT * FROM books INNER JOIN list_books ON books.book_id = list_books.book_id WHERE list_books.list_id = '$id'";
     }
