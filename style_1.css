@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*part1: navigation bar*/
+.navigation_bar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav_bar {
+    display: inline-block;
+    margin: 15px;
+    padding: 0 10px 0;
+}
+
+.nav_bar:hover {
+    background-color: #ea9a9a;
+    color: #f4f2a0;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #434f69;
+}
+
+p {
+    color: #434f69;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    background: antiquewhite;
+}
+
+
+/*part4: book of the day*/
+
+.book_of_the_day {
+    background: radial-gradient(rgb(250, 204, 243), bisque);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.botd_container {
+    display: flex;
+    max-width: 1130px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.text3 {
+    flex-basis: 50%;
+    min-width: 200px;
+    padding-left: 70px;
+    padding-top: 50px;
+    ;
+}
+
+.text3 img {
+    width: 350px;
+    height: auto;
+    border: 2px solid rgb(254, 241, 241);
+}
+
+.text3 p {
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+.author_name p {
+    padding-top: 20px;
+    font-style: italic;
+    text-align: right;
+}
+
+.book_of_the_day .small_container .title::after {
+    width: 223px;
+}
+
+/*part2, 3: explore some cate*/
+
+.text2 {
+    text-align: center;
+}
+
+.text2 img {
+    padding: 50px 30px;
+    width: 739px;
+    height: 500px;
+}
+
+.text2 h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.text2 p {
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 30px 40px 30px;
+    font-size: larger;
+}
+
+
+.categories {
+    padding: 70px 0px;
+    background: radial-gradient(rgb(104, 235, 245), rgb(235, 235, 235));
+}
+
+.small_container {
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 0px solid red;
+    position: relative;
+    min-height: 100px;
+    margin: auto;
+}
+
+.feat_row {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-bottom: 60px;
+}
+
+.featured_img {
+    flex-basis: 10%;
+    transition: transform 0.5s;
+    border: 1px solid antiquewhite;
+    margin-right: 53px;
+    cursor: pointer;
+}
+
+.featured_img:last-child {
+    margin-right: 0px;
+}
+
+
+.featured_img:hover {
+    transform: translateY(-3px);
+}
+
+.featured_img img {
+    width: 174px;
+    height: 240px;
+}
+
+.small_container h2 {
+    padding-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+
+.title {
+    position: relative;
+    line-height: 10px;
+    margin: 0 auto 40px;
+}
+
+.title::after {
+    content: '';
+    background: rgb(249, 190, 53);
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-100%);
+}
+
+.title_1 {
+    position: relative;
+    line-height: 10px;
+    margin: 0 auto 40px;
+}
+
+.title_1::after {
+    content: '';
+    background: rgb(249, 190, 53);
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-100%);
+}
+
+h4 {
+    padding-top: 10px;
+    font-weight: normal;
+    color: #555;
+    white-space: pre-wrap;
+}
+
+.rating {
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
+
+.arrows i {
+    position: absolute;
+    top: 37%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    background: #ffffff;
+}
+
+.arrows i:first-child {
+    left: 0px;
+}
+
+.arrows1 i {
+    position: absolute;
+    top: 37%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.arrows1 i:first-child {
+    right: 0px;
+}

@@ -1,0 +1,291 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    /*part1: navigation bar*/
+    .navigation_bar {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav {   
+        flex: 1;
+        text-align: right;
+    }
+
+    nav ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    .nav_bar{
+        display: inline-block;
+        margin: 15px;
+        padding:0 10px 0;
+    }
+
+    .nav_bar:hover{
+        background-color: #ea9a9a;
+        color: #f4f2a0;
+        border-radius: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: #434f69;
+    }
+
+    p {
+        color: #434f69;
+    }
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: auto;
+        background: antiquewhite;
+    }
+
+
+    /*part2, 3: explore some cate*/
+    .display_row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background: radial-gradient(#aee9ae, #f4f2a0);
+        padding-top: 40px;;
+    }
+
+    .text2 {
+        flex-basis: 50%;
+        min-width: 200px;
+        text-align: center;
+    }
+
+    .text2 img {
+        padding: 50px 30px;
+        width: 739px;
+        height: 500px;
+    }
+
+    .text2 h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        padding: 30px;
+        font-size: 40px;
+    }
+
+    .text2 p {
+        font-family: 'Poppins', sans-serif;
+        padding: 0px 30px 40px 30px;
+        font-size: larger;
+    }
+
+    .btn {
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 30px;
+        display: inline-block;
+        background-color: rgb(232, 92, 120);
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        color: aliceblue;
+        transition: background 0.5s;
+    }
+
+    .btn:hover{
+        background: #8c0000;
+    }
+
+    .categories{
+        padding: 70px 0px;
+        background: radial-gradient(rgb(104, 235, 245), rgb(235, 235, 235));
+    }
+
+    .small_container{
+        max-width: 1130px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .feat_row{
+        display: flex;
+    }
+
+    .featured_img{
+        flex-basis: 15%;
+        margin-bottom: 30px;
+        transition: transform 0.5s;
+        border: 0xpx solid antiquewhite;
+        margin-right: 50px;
+    }
+
+    .featured_img:hover{
+        transform: translateY(-5px);
+    }
+
+    .featured_img img{
+        width: 180px;
+        height: 240px;
+
+        border: 0px solid black;
+    }
+
+    .small_container h2{
+        padding-bottom: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+
+
+    .title{
+        position: relative;
+        line-height: 10px;
+        margin: 0 auto 40px;
+    }
+
+    .title::after{
+        content: '';
+        background: rgb(249, 190, 53);
+        width: 200px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-100%);
+    }
+
+    h4{
+        padding-top: 10px;
+        font-weight: normal;
+        color:#555;
+    }
+
+    .rating{
+        padding-top: 10px;
+        padding-bottom: 70px;
+    }
+
+
+
+    /*part4: book of the day*/
+
+    .book_of_the_day{
+        background: radial-gradient(rgb(250, 204, 243), bisque);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .botd_container{
+        display: flex;
+        max-width: 1130px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .text3{
+        flex-basis: 50%;
+        min-width: 200px;
+        padding-left: 70px;
+        padding-top: 50px;;
+    }
+
+    .text3 img{
+        width: 350px;
+        height: auto;
+        border: 2px solid rgb(254, 241, 241);
+    }
+
+    .text3 p{
+        padding-top: 40px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: larger;
+    }
+
+    .author_name p{
+        padding-top: 20px;
+        font-style: italic;
+        text-align: right;
+    }
+
+    .book_of_the_day .small_container .title::after{
+        width: 223px;
+    }
+
+    /*testimonial*/
+
+    .testimonial{
+        padding-top: 50px;
+        background: radial-gradient(rgb(118, 118, 226), lightgray);
+
+    }
+
+    .h3{
+        padding-bottom: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        line-height: 7px;
+        word-spacing: 10px;
+    }
+
+
+    .col_3{
+        flex-basis: 33%;
+        padding: 50px 30px 50px;
+        border: 1px solid antiquewhite;
+        box-shadow: 0 0 20px 0 rgba(241, 116, 239, 0.5);
+        border-radius: 20px;
+        text-align: center;
+        margin-right: 30px;
+        transition: transform 0.5s;
+    }
+
+   .col_3:hover{
+    transform: translateY(-10px);
+   }
+
+    .portrait{
+        border-radius: 50%;
+        width: 100px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+
+    /*footer*/
+    .footer{
+        background-image: url(https://tinyurl.com/3sk7cpze);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+
+    .col_4{
+        flex-basis: 25%;
+        border: 0px solid rgb(255, 252, 252);
+    }
+
+    .footer .small_container{
+        max-width: 1200px;
+    }
+    .about{
+        text-align: right;
+        white-space:pre-line;
+        padding-top: 20px;
+        color: rgb(255, 255, 255);
+        font: larger;
+    }
+    .col_4 h3{
+        padding-top: 50px;
+        text-align: right;
+        color: azure;
+    }
+
