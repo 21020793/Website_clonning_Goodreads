@@ -202,12 +202,12 @@ p {
 .title_1::after {
     content: '';
     background: rgb(249, 190, 53);
-    width: 100px;
+    width: 200px;
     height: 5px;
     border-radius: 5px;
     position: absolute;
     bottom: 0;
-    transform: translate(-100%);
+    transform: translate(-65%);
 }
 
 h4 {
