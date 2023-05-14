@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goodreads</title>
     <link rel="stylesheet" type="text/css" href="book_info.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
@@ -19,12 +18,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div class="container1">
-        <script src="navigation_bar.js" defer></script>
-        <div class="navigation_bar"> </div>
+        <div class="navigation_bar">
+            <div class="logo">
+                <img src="pics/logo2.png" alt="" width="150px">
+            </div>
+            <form action="./" method="get">
+                <div class="searchbar">
+                    <input type="text" class="searchbar_input" name="search" placeholder="Search Books">
+                    <button type="submit" class="searchbar_button">
+                        <i class="material-icons">search</i>
+                    </button>
+                </div>
+            </form>
+            <nav>
+                <ul>
+                    <li class="nav_bar"><a href="index.html">Home</a></li>
+                    <li class="nav_bar"><a href="genres.html">Genres</a></li>
+                    <li class="nav_bar"><a href="adding_book.html">Add Book</a></li>
+                    <li class="nav_bar"><a href="Book_shelf.html">My Books</a></li>
+                    <li class="nav_bar"><a href="login.html">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
 

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -19,12 +20,20 @@
             <div class="logo">
                 <img src="pics/logo2.png" alt="" width="150px">
             </div>
+            <form action="./" method="get">
+                <div class="searchbar">
+                    <input type="text" class="searchbar_input" name="search" placeholder="Search Books">
+                    <button type="submit" class="searchbar_button">
+                        <i class="material-icons">search</i>
+                    </button>
+                </div>
+            </form>
             <nav>
                 <ul>
                     <li class="nav_bar"><a href="index.html">Home</a></li>
                     <li class="nav_bar"><a href="genres.html">Genres</a></li>
-                    <li class="nav_bar"><a href="">Contact</a></li>
-                    <li class="nav_bar"><a href="">About</a></li>
+                    <li class="nav_bar"><a href="adding_book.html">Add Book</a></li>
+                    <li class="nav_bar"><a href="Book_shelf.html">My Books</a></li>
                     <li class="nav_bar"><a href="login.html">Log In</a></li>
                 </ul>
             </nav>
@@ -40,6 +49,5 @@
                 <button>Go back to home page?</button>
             </a>
         </div>
-    
     </div>
 </body>

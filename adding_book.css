@@ -1,56 +1,99 @@
  body{
     height: 100%;
     overflow: hidden;
-
     --text_type : 'Quicksand', sans-serif;
  }
  
  
  /*part1: navigation bar*/
-    .navigation_bar {
-        display: flex;
-        align-items: center;
-        padding: 12px;
-        font-family: 'Poppins', sans-serif;
-    }
+ .navigation_bar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    gap: 50px;
+}
 
+nav {
+    flex: 1;
+    text-align: right;
+}
 
-    .container1{
-        position: relative;
-    }
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
 
-    .container1 a{
-        text-decoration: none;
-        color: rgb(113, 107, 107);
-    }
-    nav {   
-        flex: 1;
-        text-align: right;
-    }
+.searchbar{
+    width: 100%;
+    display: inline-flex;
+    max-width: 300px;
+}
 
-    nav ul {
-        display: inline-block;
-        list-style-type: none;
-    }
+.searchbar_input{
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgb(4, 147, 101);
+    border-radius: 8px 0 0 8px;
+    background: #f4faf9;
+    transition: background 0.2s, box-shadow 0.2s;
+    font-family: 'Poppins', sans-serif;
+}
 
-    .nav_bar{
-        display: inline-block;
-        margin: 15px;
-        padding:0 10px 0;
-    }
+.searchbar_input:focus{
+    background: white;
+    box-shadow: 0 0 2px #8cc6ba;
+}
 
-    .nav_bar:hover{
-        background-color: #ea9a9a;
-        color: #f4f2a0;
-        border-radius: 20px;
-    }
+.searchbar_input::placeholder{
+    color: #84a79f;
+}
 
-    .container1 {
-        padding-left: 30px;
-        padding-right: 30px;
-        margin: auto;
-        background: antiquewhite;
-    }
+.searchbar_button{
+    width: 40px;
+    background: rgb(4, 147, 101);
+    color: white;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.searchbar_button:active{
+    box-shadow: 0 0 30px rgba(0, 0 , 0, 0.25);
+}
+
+.nav_bar {
+    display: inline-block;
+    margin: 15px;
+    padding: 0 10px 0;
+}
+
+.nav_bar:hover {
+    background-color: #ea9a9a;
+    color: #f4f2a0;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #434f69;
+}
+
+p {
+    color: #434f69;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    background: antiquewhite;
+}
 
     p{
         font-family: 'Times New Roman', Times, serif;
