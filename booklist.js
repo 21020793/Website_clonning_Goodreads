@@ -55,7 +55,7 @@ function createBookElements(book) {
 
 async function getBookList(id, type = 'list') {
     const url = 'getBooks.php';
-    const params = 'id=' + id + '&type=' + type;
+    const params = 'id=' + id + '&type=' + type + '&limit=10';
 
     try {
         const response = await fetch(url, {
@@ -74,7 +74,7 @@ async function getBookList(id, type = 'list') {
         const bookElements = [];
 
         bookList.forEach((book, index) => {
-            if (index > 4) return;
+            // if (index > 4) return;
             const bookElement = createBookElements(book);
             bookElements.push(bookElement);
         });
@@ -87,7 +87,8 @@ async function getBookList(id, type = 'list') {
 
 async function getUserBookList() {
     const url = 'getBooks.php';
-    const params = 'id=' + localStorage.getItem("id") + '&type=user';
+    const params = 'id=' + localStorage.getItem("id") + '&type=user&limit=100';
+    console.log(params);
 
     try {
         const response = await fetch(url, {
@@ -106,7 +107,7 @@ async function getUserBookList() {
         const bookElements = [];
 
         bookList.forEach((book, index) => {
-            if (index > 4) return;
+            // if (index > 4) return;
             const bookElement = createBookElements(book);
             bookElements.push(bookElement);
         });

@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Lấy giá trị id từ yêu cầu POST
     $id = $_POST["id"];
     $type = $_POST["type"];
+    $limit = $_POST["limit"];
 
     if ($type == "book") {
         $book = getBookById($id);
@@ -48,12 +49,13 @@ function getBookById($id)
 function getBookListById($id)
 {
     global $conn;
+    global $limit;
     $id = $conn->real_escape_string($id);
 
     if ($id == "Featured") {
-        $sql = "SELECT * FROM books ORDER BY rating DESC LIMIT 10";
+        $sql = "SELECT * FROM books ORDER BY rating DESC LIMIT $limit";
     } else if ($id == "New") {
-        $sql = "SELECT * FROM books ORDER BY date_added DESC LIMIT 10";
+        $sql = "SELECT * FROM books ORDER BY date_added DESC LIMIT $limit";
     } else {
         $sql = "SELECT * FROM books INNER JOIN list_books ON books.book_id = list_books.book_id WHERE list_books.list_id = '$id'";
     }

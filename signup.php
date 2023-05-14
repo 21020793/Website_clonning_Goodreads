@@ -34,7 +34,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "failed";
     }
 
+    // Tạo danh sách mặc định
+    $list_name = "Default List";
+
+    $stmt = $conn->prepare("INSERT INTO Reading_Lists (account_id, list_name) VALUES (?, ?)");
+    $stmt->bind_param("is", $account_id, $list_name);
+
+    if ($stmt->execute()) {
+        // Tạo danh sách thành công
+        $list_id = $stmt->insert_id; // Lấy giá trị ID của bản ghi vừa chèn
+    } else {
+        // Tạo danh sách không thành công
+        echo "failed";
+    }
+
     $stmt->close();
+
 }
 
 $conn->close();

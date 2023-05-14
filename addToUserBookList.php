@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Sách đã có trong danh sách người dùng
         echo "exists";
     } else {
+        $list_id = getListId($conn, $accountId);
         // Tiến hành thêm book_id và list_id vào bảng List_Books
         $stmt = $conn->prepare("INSERT INTO List_Books (list_id, book_id) VALUES (?, ?)");
         $stmt->bind_param("ii", $list_id, $bookId);
@@ -30,3 +31,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Đóng kết nối cơ sở dữ liệu
 $conn->close();
+
+function getListId($conn, $account_id)
+{
+    $stmt = $conn->prepare("SELECT list_id FROM Reading_Lists WHERE account_id = ?");
+    $stmt->bind_param("i", $account_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $list_id = $row['list_id'];
+        return $list_id;
+    } else {
+        return null;
+    }
+
+    $stmt->close();
+}

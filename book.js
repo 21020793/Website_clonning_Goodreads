@@ -1,6 +1,6 @@
 async function getBookDetails(id) {
     const url = 'getBooks.php';
-    const params = 'id=' + id + '&type=book';
+    const params = 'id=' + id + '&type=book&limit=10';
 
     try {
         const response = await fetch(url, {

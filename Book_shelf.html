@@ -60,6 +60,7 @@
                 const userList = bookContainerList[0];
 
                 const featuredBookList = await getUserBookList();
+                console.log(featuredBookList);
 
                 featuredBookList.forEach((bookElement) => {
                     userList.appendChild(bookElement);
