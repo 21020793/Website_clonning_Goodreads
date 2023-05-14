@@ -14,9 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($type == "book") {
         $book = getBookById($id);
         echo json_encode($book);
-    } else {
+    } else if ($type == "list") {
         $bookList = getBookListById($id);
         echo json_encode($bookList);
+    } else {
+        $userBookListId = getUserBookList();
+        $userBookList = getBookListById($userBookListId);
+        echo json_encode($userBookList);
     }
 }
 
@@ -47,6 +51,22 @@ function getBookListById($id)
 
     return getBookListFromQuery($sql);
 }
+
+function getUserBookList()
+{
+    global $conn;
+    $user_id = $_POST["id"];
+    $sql = "SELECT reading_lists.list_id FROM reading_lists WHERE reading_lists.account_id = '$user_id'";
+    $result = $conn->query($sql);
+    if ($result->num_rows == 1) {
+        while ($row = $result->fetch_assoc()) {
+            $bookList = $row["list_id"];
+        }
+    }
+
+    return $bookList;
+}
+
 
 function getBookListFromQuery($sql)
 {

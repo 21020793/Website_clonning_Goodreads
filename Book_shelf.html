@@ -15,142 +15,40 @@
 
 <body class="allPage">
     <div class="container">
-        <div class="navigation_bar">
-            <div class="logo">
-                <img src="pics/logo2.png" alt="" width="150px">
-            </div>
-            <form action="./" method="get">
-                <div class="searchbar">
-                    <input type="text" class="searchbar_input" name="search" placeholder="Search Books">
-                    <button type="submit" class="searchbar_button">
-                        <i class="material-icons">search</i>
-                    </button>
-                </div>
-            </form>
-            <nav>
-                <ul>
-                    <li class="nav_bar"><a href="index.html">Home</a></li>
-                    <li class="nav_bar"><a href="genres.html">Genres</a></li>
-                    <li class="nav_bar"><a href="">Contact</a></li>
-                    <li class="nav_bar"><a href="">About</a></li>
-                    <li class="nav_bar"><a href="login.html">Log In</a></li>
-                 
-                </ul>
-            </nav>
-        </div>
+        <script src="navigation_bar.js"></script>
+        <div class="navigation_bar"></div>
     </div>
 
+    <script src="booklist.js"></script>
     <div class="categories">
         <div class="small_container">
             <h2 class="title_1">My Books</h2>
             <div class="arrows">
                 <i class="fa fa-angle-left" aria-hidden="true"></i>
             </div>
-            <div class="feat_row">
-                <div class="featured_img">
-                    <img src="pics/how_to_not_kill_urself.jpg">
-                    <h4>How Not to Kill Yourself: A Portrait of the Suicidal Mind</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/man'search_for_meaning.jpg">
-                    <h4>Man's Search for Meaning</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/ur_brain_on_art.jpg">
-                    <h4>Your brain on art</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-
-                </div>
-                <div class="featured_img">
-                    <img src="pics/image3.jpg">
-                    <h4>Still Alice</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/the_perfect_child.jpg">
-                    <h4>The perfect child</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-            </div>
+            <div class="feat_row"> </div>
             <div class="arrows1">
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                const bookContainerList = document.querySelectorAll(".feat_row");
+                const userList = bookContainerList[0];
+
+                const featuredBookList = await getUserBookList();
+
+                featuredBookList.forEach((bookElement) => {
+                    userList.appendChild(bookElement);
+                });
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    </script>
+</body>
+
+</html>

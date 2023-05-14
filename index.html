@@ -13,20 +13,8 @@
 
 <body>
     <div class="container">
-        <div class="navigation_bar">
-            <div class="logo">
-                <img src="pics/logo2.png" alt="" width="150px">
-            </div>
-            <nav>
-                <ul>
-                    <li class="nav_bar"><a href="index.html">Home</a></li>
-                    <li class="nav_bar"><a href="genres.html">Genres</a></li>
-                    <li class="nav_bar"><a href="">Contact</a></li>
-                    <li class="nav_bar"><a href="">About</a></li>
-                    <li class="nav_bar"><a href="login.html">Log In</a></li>
-                </ul>
-            </nav>
-        </div>
+        <script src="navigation_bar.js"></script>
+        <div class="navigation_bar"> </div>
     </div>
 
     <div class="display_row">
@@ -55,6 +43,28 @@
             <div class="feat_row"> </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                const bookContainerList = document.querySelectorAll(".feat_row");
+                const featured = bookContainerList[0];
+                const newlyReleased = bookContainerList[1];
+
+                const featuredBookList = await getBookList("Featured");
+                const newlyReleasedBookList = await getBookList("New");
+
+                featuredBookList.forEach((bookElement) => {
+                    featured.appendChild(bookElement);
+                });
+
+                newlyReleasedBookList.forEach((bookElement) => {
+                    newlyReleased.appendChild(bookElement);
+                });
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    </script>
 
     <!----Book of the day---->
 

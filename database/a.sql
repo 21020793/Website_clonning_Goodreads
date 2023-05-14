@@ -1,1 +1,1 @@
-DROP DATABASE IF EXISTS datamanagement;
+SELECT * FROM books INNER JOIN reading_lists ON books.book_id = reading_lists.list_id WHERE reading_lists.account_id = 1
