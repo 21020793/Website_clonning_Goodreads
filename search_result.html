@@ -2,65 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goodreads_Clone</title>
-    <link rel="stylesheet" type="text/css" href="search_result.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="search_result.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body class="allPage">
     <div class="container">
         <div class="navigation_bar">
             <div class="logo">
-                <img src="pics/logo2.png" alt="" width="150px">
+                <img src="pics/logo2.png" alt="" width="150px" />
             </div>
-            <form action="./" method="get">
+            <form id="searchForm" action="search_result.html" method="post">
                 <div class="searchbar">
-                    <input type="text" class="searchbar_input" name="search" placeholder="Search Books">
+                    <input type="text" class="searchbar_input" name="search" placeholder="Search Books" />
                     <button type="submit" class="searchbar_button">
                         <i class="material-icons">search</i>
                     </button>
                 </div>
             </form>
+            <script src="search.js"></script>
             <nav>
-                <ul>
-                    <li class="nav_bar"><a href="index.html">Home</a></li>
-                    <li class="nav_bar"><a href="genres.html">Genres</a></li>
-                    <li class="nav_bar"><a href="adding_book.html">Add Book</a></li>
-                    <li class="nav_bar"><a href="Book_shelf.html">My Books</a></li>
-                    <li class="nav_bar"><a href="login.html">Log In</a></li>
-                </ul>
+                <ul> </ul>
             </nav>
+            <script src="navigation_bar.js"></script>
         </div>
     </div>
 
-    <div class="result">
-        <div class="container1">
-            <div class="box">
-                <p>Search Result:</p>
-            </div>
-        </div>
-    </div>
+    <div class="result"> </div>
     <div class="categories">
         <div class="small_container">
-            <div class="feat_row">
-                <div class="featured_img">
-                    <img src="pics/how_to_not_kill_urself.jpg" />
-                    <h4>How Not to Kill Yourself: A Portrait of the Suicidal Mind</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-            </div>
+            <div class="feat_row"></div>
+            <script src="booklist.js"></script>
+            <script src="processing_search_results.js"></script>
         </div>
     </div>
 </body>
+
+</html>

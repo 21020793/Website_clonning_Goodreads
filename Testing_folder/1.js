@@ -30,6 +30,8 @@ const addComment = async (body, parentId, replyTo = undefined) => {
 		});
 		if (!response.ok) throw new Error("Error adding comment");
 		await getReviewsByBookId(bookId);
+		console.log(response);
+		console.log(bookId);
 	} catch (error) {
 		console.log(error);
 	}
