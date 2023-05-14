@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
 
         if (hasError.some(error => error)) {
+            alert("Please fix the errors before submitting the form.");
             return;
         }
 
