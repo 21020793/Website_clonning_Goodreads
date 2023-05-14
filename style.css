@@ -14,7 +14,7 @@
         font-family: 'Poppins', sans-serif;
     }
 
-    nav {   
+    nav {
         flex: 1;
         text-align: right;
     }
@@ -24,17 +24,18 @@
         list-style-type: none;
     }
 
-    .nav_bar{
+    .nav_bar {
         display: inline-block;
         margin: 15px;
-        padding:0 10px 0;
+        padding: 0 10px 0;
     }
 
-    .nav_bar:hover{
+    .nav_bar:hover {
         background-color: #ea9a9a;
         color: #f4f2a0;
         border-radius: 20px;
     }
+
     a {
         text-decoration: none;
         color: #434f69;
@@ -59,7 +60,8 @@
         flex-wrap: wrap;
         justify-content: space-around;
         background: radial-gradient(#aee9ae, #f4f2a0);
-        padding-top: 40px;;
+        padding-top: 40px;
+        ;
     }
 
     .text2 {
@@ -98,27 +100,27 @@
         transition: background 0.5s;
     }
 
-    .btn:hover{
+    .btn:hover {
         background: #8c0000;
     }
 
-    .categories{
+    .categories {
         padding: 70px 0px;
         background: radial-gradient(rgb(104, 235, 245), rgb(235, 235, 235));
     }
 
-    .small_container{
+    .small_container {
         max-width: 1130px;
         margin: auto;
         padding-left: 25px;
         padding-right: 25px;
     }
 
-    .feat_row{
+    .feat_row {
         display: flex;
     }
 
-    .featured_img{
+    .featured_img {
         flex-basis: 15%;
         margin-bottom: 30px;
         transition: transform 0.5s;
@@ -126,31 +128,31 @@
         margin-right: 50px;
     }
 
-    .featured_img:hover{
+    .featured_img:hover {
         transform: translateY(-5px);
     }
 
-    .featured_img img{
+    .featured_img img {
         width: 180px;
         height: 240px;
 
         border: 0px solid black;
     }
 
-    .small_container h2{
+    .small_container h2 {
         padding-bottom: 30px;
         font-family: 'Times New Roman', Times, serif;
         font-size: 30px;
     }
 
 
-    .title{
+    .title {
         position: relative;
         line-height: 10px;
         margin: 0 auto 40px;
     }
 
-    .title::after{
+    .title::after {
         content: '';
         background: rgb(249, 190, 53);
         width: 200px;
@@ -161,13 +163,13 @@
         transform: translate(-100%);
     }
 
-    h4{
+    h4 {
         padding-top: 10px;
         font-weight: normal;
-        color:#555;
+        color: #555;
     }
 
-    .rating{
+    .rating {
         padding-top: 10px;
         padding-bottom: 70px;
     }
@@ -176,13 +178,13 @@
 
     /*part4: book of the day*/
 
-    .book_of_the_day{
+    .book_of_the_day {
         background: radial-gradient(rgb(250, 204, 243), bisque);
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
-    .botd_container{
+    .botd_container {
         display: flex;
         max-width: 1130px;
         margin: auto;
@@ -190,45 +192,46 @@
         padding-right: 25px;
     }
 
-    .text3{
+    .text3 {
         flex-basis: 50%;
         min-width: 200px;
         padding-left: 70px;
-        padding-top: 50px;;
+        padding-top: 50px;
+        ;
     }
 
-    .text3 img{
+    .text3 img {
         width: 350px;
         height: auto;
         border: 2px solid rgb(254, 241, 241);
     }
 
-    .text3 p{
+    .text3 p {
         padding-top: 40px;
         text-align: center;
         font-family: 'Poppins', sans-serif;
         font-size: larger;
     }
 
-    .author_name p{
+    .author_name p {
         padding-top: 20px;
         font-style: italic;
         text-align: right;
     }
 
-    .book_of_the_day .small_container .title::after{
+    .book_of_the_day .small_container .title::after {
         width: 223px;
     }
 
     /*testimonial*/
 
-    .testimonial{
+    .testimonial {
         padding-top: 50px;
         background: radial-gradient(rgb(118, 118, 226), lightgray);
 
     }
 
-    .h3{
+    .h3 {
         padding-bottom: 100px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
@@ -237,7 +240,7 @@
     }
 
 
-    .col_3{
+    .col_3 {
         flex-basis: 33%;
         padding: 50px 30px 50px;
         border: 1px solid antiquewhite;
@@ -248,11 +251,11 @@
         transition: transform 0.5s;
     }
 
-   .col_3:hover{
-    transform: translateY(-10px);
-   }
+    .col_3:hover {
+        transform: translateY(-10px);
+    }
 
-    .portrait{
+    .portrait {
         border-radius: 50%;
         width: 100px;
         height: auto;
@@ -261,31 +264,32 @@
 
 
     /*footer*/
-    .footer{
+    .footer {
         background-image: url(https://tinyurl.com/3sk7cpze);
         background-repeat: no-repeat;
         background-size: cover;
         height: 300px;
     }
 
-    .col_4{
+    .col_4 {
         flex-basis: 25%;
         border: 0px solid rgb(255, 252, 252);
     }
 
-    .footer .small_container{
+    .footer .small_container {
         max-width: 1200px;
     }
-    .about{
+
+    .about {
         text-align: right;
-        white-space:pre-line;
+        white-space: pre-line;
         padding-top: 20px;
         color: rgb(255, 255, 255);
         font: larger;
     }
-    .col_4 h3{
+
+    .col_4 h3 {
         padding-top: 50px;
         text-align: right;
         color: azure;
     }
-

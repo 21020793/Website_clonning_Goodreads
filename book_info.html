@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goodreads_Clone</title>
-    <link rel="stylesheet" type="text/css" href="book_info.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goodreads</title>
+    <link rel="stylesheet" type="text/css" href="book_info.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="star_rating.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet" />
     <script src="Testing_folder/1.js" defer></script>
     <script src="script.js" defer></script>
 
@@ -25,7 +25,7 @@
     <div class="container1">
         <div class="navigation_bar">
             <div class="logo">
-                <img src="pics/logo2.png" alt="" width="150px">
+                <img src="pics/logo2.png" alt="" width="150px" />
             </div>
             <nav>
                 <ul>
@@ -42,7 +42,7 @@
 
     <div class="left_still_container">
         <div class="left_container">
-            <img src="pics/man'search_for_meaning.jpg" alt="">
+            <img id="book_image" />
             <button>Want to read!</button>
             <div class="rating_box">
                 <div class="stars">
@@ -58,34 +58,22 @@
     </div>
 
     <div class="right_container">
-        <p class="book_title">Man's Search For Meaning</p>
-        <p class="author_name">Viktor E. Frankl</p>
+        <p class="book_title"></p>
+        <p class="author_name"></p>
+        <!---Đưa ra số đánh giá sao trung bình của sản phẩm / 5 sao-->
         <div class="rating_status_box">
-            <div class="stars_aver">
-                <i class="fa fa-star dstars"></i>
-                <i class="fa fa-star dstars"></i>
-                <i class="fa fa-star dstars"></i>
-                <i class="fa fa-star dstars"></i>
-                <i class="fa fa-star dstars"></i>
-            </div>
-            <div class="rating_point">4</div> <!---Đưa ra số đánh giá sao trung bình của sản phẩm / 5 sao-->
+            <div id="book_rate_star" class="stars_aver"></div>
+            <div id="book_rate_point" class="rating_point"></div>
         </div>
-        <p class="summary"> <!---Get information from database-->
-            Psychiatrist Viktor Frankl's memoir has riveted generations of readers with its descriptions of life in Nazi
-            death camps and its lessons for spiritual survival. Based on his own experience and the stories of his
-            patients, Frankl argues that we cannot avoid suffering but we can choose how to cope with it, find meaning
-            in it, and move forward with renewed purpose. At the heart of his theory, known as logotherapy, is a
-            conviction that the primary human drive is not pleasure but the pursuit of what we find meaningful. Man's
-            Search for Meaning has become one of the most influential books in America; it continues to inspire us all
-            to find significance in the very act of living.
-        </p>
-        <div class="genres"> <!---Get information from database-->
+
+        <p class="summary"> </p>
+        <div class="genres">
+            <!---Get information from database-->
             Genres:
             <a href="">Nonfiction</a>
             <a href="">Psychology</a>
             <a href="">Self Help</a>
         </div>
-
 
         <div class="categories">
             <div class="small_container">
@@ -95,7 +83,7 @@
                 </div>
                 <div class="feat_row">
                     <div class="featured_img">
-                        <img src="pics/how_to_not_kill_urself.jpg">
+                        <img src="pics/how_to_not_kill_urself.jpg" />
                         <h4>How Not to Kill Yourself: A Portrait of the Suicidal Mind</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -106,7 +94,7 @@
                         </div>
                     </div>
                     <div class="featured_img">
-                        <img src="pics/man'search_for_meaning.jpg">
+                        <img src="pics/man'search_for_meaning.jpg" />
                         <h4>Man's Search for Meaning</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -117,7 +105,7 @@
                         </div>
                     </div>
                     <div class="featured_img">
-                        <img src="pics/ur_brain_on_art.jpg">
+                        <img src="pics/ur_brain_on_art.jpg" />
                         <h4>Your brain on art</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -126,10 +114,9 @@
                             <i class="fa fa-star-half-o"></i>
                             <i class="fa fa-star-o"></i>
                         </div>
-    
                     </div>
                     <div class="featured_img">
-                        <img src="pics/image3.jpg">
+                        <img src="pics/image3.jpg" />
                         <h4>Still Alice</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -137,11 +124,10 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half-o"></i>
-    
                         </div>
                     </div>
                     <div class="featured_img">
-                        <img src="pics/the_perfect_child.jpg">
+                        <img src="pics/the_perfect_child.jpg" />
                         <h4>The perfect child</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -152,7 +138,7 @@
                         </div>
                     </div>
                     <div class="featured_img">
-                        <img src="pics/i_want_to_die_but.jpg">
+                        <img src="pics/i_want_to_die_but.jpg" />
                         <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -163,7 +149,7 @@
                         </div>
                     </div>
                     <div class="featured_img">
-                        <img src="pics/i_want_to_die_but.jpg">
+                        <img src="pics/i_want_to_die_but.jpg" />
                         <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -174,7 +160,7 @@
                         </div>
                     </div>
                     <div class="featured_img">
-                        <img src="pics/i_want_to_die_but.jpg">
+                        <img src="pics/i_want_to_die_but.jpg" />
                         <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -185,7 +171,7 @@
                         </div>
                     </div>
                     <div class="featured_img">
-                        <img src="pics/i_want_to_die_but.jpg">
+                        <img src="pics/i_want_to_die_but.jpg" />
                         <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
                         <div class="rating">
                             <i class="fa fa-star"></i>
@@ -201,32 +187,31 @@
                 </div>
             </div>
         </div>
-    
 
         <div class="comment_block">
             <template class="reply-input-template">
                 <div class="reply-input container">
-                    <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
+                    <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img" />
                     <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
                     <button class="bu-primary">SEND</button>
                 </div>
             </template>
-        
+
             <template class="comment-template">
                 <div class="comment-wrp">
                     <div class="comment container">
                         <div class="c-score">
-                            <img src="images/icon-plus.svg" alt="plus" class="score-control score-plus">
+                            <img src="images/icon-plus.svg" alt="plus" class="score-control score-plus" />
                             <p class="score-number">5</p>
-                            <img src="images/icon-minus.svg" alt="minus" class="score-control score-minus">
+                            <img src="images/icon-minus.svg" alt="minus" class="score-control score-minus" />
                         </div>
                         <div class="c-controls">
-                            <a class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon">Delete</a>
-                            <a class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon">Edit</a>
-                            <a class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon">Reply</a>
+                            <a class="delete"><img src="images/icon-delete.svg" alt="" class="control-icon" />Delete</a>
+                            <a class="edit"><img src="images/icon-edit.svg" alt="" class="control-icon" />Edit</a>
+                            <a class="reply"><img src="images/icon-reply.svg" alt="" class="control-icon" />Reply</a>
                         </div>
                         <div class="c-user">
-                            <img src="images/avatars/image-maxblagun.webp" alt="" class="usr-img">
+                            <img src="images/avatars/image-maxblagun.webp" alt="" class="usr-img" />
                             <p class="usr-name">maxblagun</p>
                             <p class="cmnt-at">2 weeks ago</p>
                         </div>
@@ -234,28 +219,32 @@
                             <span class="reply-to"></span>
                             <span class="c-body"></span>
                         </p>
-                    </div><!--comment-->
-                    <div class="replies comments-wrp">
-                    </div><!--replies-->
+                    </div>
+                    <!--comment-->
+                    <div class="replies comments-wrp"></div>
+                    <!--replies-->
                 </div>
             </template>
             <main>
                 <div class="comment-section">
-        
-                    <div class="comments-wrp">
-        
-                    </div> <!--commentS wrapper-->
+                    <div class="comments-wrp"></div>
+                    <!--commentS wrapper-->
                     <div class="reply-input container">
-                        <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img">
+                        <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img" />
                         <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
                         <button class="bu-primary">SEND</button>
-                    </div> <!--reply input-->
-                </div> <!--comment sectio-->
-        
+                    </div>
+                    <!--reply input-->
+                </div>
+                <!--comment sectio-->
+
                 <div class="modal-wrp invisible">
                     <div class="modal container">
                         <h3>Delete comment</h3>
-                        <p>Are you sure you want to delete this comment? This will remove the comment and cant be undone</p>
+                        <p>
+                            Are you sure you want to delete this comment? This will remove
+                            the comment and cant be undone
+                        </p>
                         <button class="yes">YES,DELETE</button>
                         <button class="no">NO,CANCEL</button>
                     </div>
@@ -263,4 +252,48 @@
             </main>
         </div>
     </div>
+
+    <script src="book.js"></script>
+    <script src="starrate.js"></script>
+    <script>
+        // Trích xuất book_id từ URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const bookId = urlParams.get('book_id');
+        localStorage.setItem("bookId", bookId);
+
+        // Sử dụng bookId để lấy thông tin chi tiết về quyển sách tương ứng
+        console.log("Book ID:", bookId);
+        // Code xử lý hiển thị thông tin chi tiết của quyển sách
+        const bookImage = document.getElementById("book_image");
+        const bookTitle = document.querySelector(".book_title");
+        const bookAuthor = document.querySelector(".author_name");
+        const bookSummary = document.querySelector(".summary");
+        const bookRate = document.querySelector(".rate");
+        const bookRatePoint = document.getElementById("book_rate_point");
+        const bookRateStar = document.getElementById("book_rate_star");
+
+        function displayBook(book) {
+            bookImage.src = book.image;
+            bookTitle.textContent = book.title;
+            bookAuthor.textContent = book.author;
+            bookSummary.textContent = book.description;
+            bookRatePoint.textContent = book.rate;
+            bookRateStar.appendChild(createStarRate(book.rate));
+        }
+
+        async function setBookDetails(bookId) {
+            try {
+                const book = await getBookDetails(bookId);
+                displayBook(book);
+            }
+            catch (error) {
+                console.log(error);
+            }
+        }
+
+        setBookDetails(bookId);
+    </script>
+
 </body>
+
+</html>
