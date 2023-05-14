@@ -5,6 +5,8 @@ session_start();
 // Bao gồm tệp connectdatabase.php để có kết nối cơ sở dữ liệu
 require '../connectdatabase.php';
 
+include 'update_rating.php';
+
 // Xử lý khi người dùng gửi yêu cầu xóa review
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Lấy thông tin review
@@ -15,6 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->begin_transaction();
 
     try {
+        // book_id
+        $book_id = getBookId();
         // Kiểm tra xem người dùng có phải là tác giả của review không
         $stmt = $conn->prepare("SELECT * FROM reviews WHERE review_id = ? AND account_id = ?");
         $stmt->bind_param("ii", $review_id, $account_id);
@@ -34,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($stmt->affected_rows > 0) {
                 // Xóa review thành công, commit transaction
+                updateRating($book_id);
                 $conn->commit();
                 echo "success";
             } else {

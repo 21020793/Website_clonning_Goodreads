@@ -15,11 +15,11 @@ const addComment = async (body, parentId, replyTo = undefined) => {
 	const type = parentId === 0 ? "review" : "comment";
 	const book_id = localStorage.getItem("bookId");
 	const content = body;
-	const rating = 0;
+	const rating = localStorage.getItem("rating");
 	const parent_comment_id = parentId;
 	const url = "Testing_folder/add_comment.php";
 	const params = 'type=' + type + '&book_id=' + book_id + '&content=' + content + '&rating=' + rating + '&parent_comment_id=' + parent_comment_id;
-
+	console.log(params);
 	try {
 		const response = await fetch(url, {
 			method: "POST",
@@ -30,8 +30,6 @@ const addComment = async (body, parentId, replyTo = undefined) => {
 		});
 		if (!response.ok) throw new Error("Error adding comment");
 		await getReviewsByBookId(bookId);
-		console.log(response);
-		console.log(bookId);
 	} catch (error) {
 		console.log(error);
 	}
@@ -58,8 +56,7 @@ const deleteComment = async (commentObject) => {
 
 const updateComment = async (commentId, content) => {
 	const url = "Testing_folder/update_comment.php";
-	const params = 'review_id=' + commentId + '&content=' + content + '&account_id=' + localStorage.getItem("id");
-
+	const params = 'review_id=' + commentId + '&content=' + content + '&account_id=' + localStorage.getItem("id") + '&rating=' + localStorage.getItem("rating");
 	console.log(params);
 
 	try {

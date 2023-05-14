@@ -85,107 +85,26 @@
                 <div class="arrows">
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </div>
-                <div class="feat_row">
-                    <div class="featured_img">
-                        <img src="pics/how_to_not_kill_urself.jpg" />
-                        <h4>How Not to Kill Yourself: A Portrait of the Suicidal Mind</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="featured_img">
-                        <img src="pics/man'search_for_meaning.jpg" />
-                        <h4>Man's Search for Meaning</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
-                    </div>
-                    <div class="featured_img">
-                        <img src="pics/ur_brain_on_art.jpg" />
-                        <h4>Your brain on art</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                    </div>
-                    <div class="featured_img">
-                        <img src="pics/image3.jpg" />
-                        <h4>Still Alice</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
-                    </div>
-                    <div class="featured_img">
-                        <img src="pics/the_perfect_child.jpg" />
-                        <h4>The perfect child</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="featured_img">
-                        <img src="pics/i_want_to_die_but.jpg" />
-                        <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="featured_img">
-                        <img src="pics/i_want_to_die_but.jpg" />
-                        <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="featured_img">
-                        <img src="pics/i_want_to_die_but.jpg" />
-                        <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="featured_img">
-                        <img src="pics/i_want_to_die_but.jpg" />
-                        <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                </div>
+                <div class="feat_row"> </div>
+                <script src="booklist.js"></script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", async () => {
+                        try {
+                            const bookContainerList = document.querySelectorAll(".feat_row");
+                            const featured = bookContainerList[0];
+
+                            const featuredBookList = await getBookList("Featured");
+                            const newlyReleasedBookList = await getBookList("New");
+
+                            featuredBookList.forEach((bookElement) => {
+                                featured.appendChild(bookElement);
+                            });
+
+                        } catch (error) {
+                            console.error(error);
+                        }
+                    });
+                </script>
                 <div class="arrows1">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>

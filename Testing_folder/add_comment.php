@@ -5,6 +5,8 @@ session_start();
 // Bao gồm tệp connectdatabase.php để có kết nối cơ sở dữ liệu
 require '../connectdatabase.php';
 
+include 'update_rating.php';
+
 // Xử lý khi người dùng gửi comment
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -36,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->affected_rows > 0) {
             // Thêm comment hoặc review thành công, commit transaction
+            updateRating($book_id);
             $conn->commit();
             echo json_encode(["status" => "success"]);
         } else {
@@ -49,5 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo json_encode(["status" => "fail"]);
     }
 }
+
+
+
+
 
 $conn->close();
