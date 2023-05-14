@@ -1,73 +1,37 @@
-function createNavigationBarElements() {
-    // Tạo phần tử div chứa thanh điều hướng
-    const navigationBar = document.createElement('div');
-    navigationBar.classList.add('navigation_bar');
+// Tạo phần tử <ul>
+var ulElement = document.createElement("ul");
 
-    // Tạo phần tử div chứa logo
-    const logoContainer = document.createElement('div');
-    logoContainer.classList.add('logo');
-    const logoImg = document.createElement('img');
-    logoImg.src = 'pics/logo2.png';
-    logoImg.alt = '';
-    logoImg.style.width = '150px';
-    logoContainer.appendChild(logoImg);
-
-    // Tạo phần tử form chứa ô tìm kiếm
-    const searchForm = document.createElement('form');
-    searchForm.action = './';
-    searchForm.method = 'get';
-    const searchbarContainer = document.createElement('div');
-    searchbarContainer.classList.add('searchbar');
-    const searchbarInput = document.createElement('input');
-    searchbarInput.type = 'text';
-    searchbarInput.classList.add('searchbar_input');
-    searchbarInput.name = 'search';
-    searchbarInput.placeholder = 'Search Books';
-    const searchbarButton = document.createElement('button');
-    searchbarButton.type = 'submit';
-    searchbarButton.classList.add('searchbar_button');
-    const searchbarIcon = document.createElement('i');
-    searchbarIcon.classList.add('material-icons');
-    searchbarIcon.textContent = 'search';
-    searchbarButton.appendChild(searchbarIcon);
-    searchbarContainer.appendChild(searchbarInput);
-    searchbarContainer.appendChild(searchbarButton);
-    searchForm.appendChild(searchbarContainer);
-
-    // Tạo phần tử nav chứa danh sách liên kết
-    const navigationLinks = document.createElement('nav');
-    const linkList = document.createElement('ul');
-    const linkItems = ['Home', 'Genres', 'Contact', 'About', 'Log In'];
-    const linkUrls = ['index', 'genres', 'contact', 'about', 'login'];
-
-    linkItems.forEach((linkItem, index) => {
-        const listItem = document.createElement('li');
-        listItem.classList.add('nav_bar');
-        const link = document.createElement('a');
-        link.href = `${linkUrls[index]}.html`;
-        link.textContent = linkItem;
-        listItem.appendChild(link);
-        linkList.appendChild(listItem);
-    });
-
-    navigationLinks.appendChild(linkList);
-
-    // Thêm các phần tử vào thanh điều hướng
-    navigationBar.appendChild(logoContainer);
-    navigationBar.appendChild(searchForm);
-    navigationBar.appendChild(navigationLinks);
-
-    return navigationBar;
+// Tạo mảng chứa các đường dẫn và nội dung của các mục li
+var navItems = [];
+if (localStorage.getItem("id")) {
+    navItems = [
+        { href: "index.html", text: "Home" },
+        { href: "genres.html", text: "Genres" },
+        { href: "adding_book.html", text: "Add Book" },
+        { href: "Book_shelf.html", text: localStorage.getItem("username") + "'s Books" },
+        { href: "logout.html", text: "Log Out" }
+    ];
+} else {
+    navItems = [
+        { href: "index.html", text: "Home" },
+        { href: "genres.html", text: "Genres" },
+        { href: "login.html", text: "Log In" }
+    ];
 }
 
-function createNavigation() {
-    const navigation = document.querySelector('.navigation_bar');
+// Tạo các mục li và thêm vào phần tử <ul>
+navItems.forEach(item => {
+    var liElement = document.createElement("li");
+    liElement.classList.add("nav_bar");
 
-    if (navigation) {
-        const navigationBarElements = createNavigationBarElements();
-        navigation.appendChild(navigationBarElements);
-    }
-}
+    var aElement = document.createElement("a");
+    aElement.href = item.href;
+    aElement.textContent = item.text;
 
-// Gọi hàm để tạo thanh điều hướng
-document.addEventListener('DOMContentLoaded', createNavigation);
+    liElement.appendChild(aElement);
+    ulElement.appendChild(liElement);
+});
+
+// Tìm phần tử cha trong HTML để thêm phần tử <ul>
+var parentElement = document.querySelector("ul");
+parentElement.appendChild(ulElement);
