@@ -70,214 +70,106 @@
         </div>
     </div>
 
+    <script src="booklist.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            const url = 'getBooks.php';
+            const params = 'id=' + localStorage.getItem("id") + '&type=allgenre';
 
-    <div class="categories">
-        <div class="small_container">
-            <h2 class="title_1">Pyschology</h2>
-            <div class="arrows">
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
-            </div>
-            <div class="feat_row">
-                <div class="featured_img">
-                    <img src="pics/how_to_not_kill_urself.jpg">
-                    <h4>How Not to Kill Yourself: A Portrait of the Suicidal Mind</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/man'search_for_meaning.jpg">
-                    <h4>Man's Search for Meaning</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/ur_brain_on_art.jpg">
-                    <h4>Your brain on art</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: params,
+                });
 
-                </div>
-                <div class="featured_img">
-                    <img src="pics/image3.jpg">
-                    <h4>Still Alice</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
+                if (!response.ok) {
+                    throw new Error('Failed to fetch book list');
+                }
 
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/the_perfect_child.jpg">
-                    <h4>The perfect child</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="arrows1">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </div>
-        </div>
-    </div>
+                const genres = await response.json();
+                genres.forEach((element, index) => {
+                    // Tạo phần tử div.categories
+                    var categoriesDiv = document.createElement("div");
+                    categoriesDiv.classList.add("categories");
 
-    <div class="categories">
-        <div class="small_container">
-            <h2 class="title_1">Pyschology</h2>
-            <div class="arrows">
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
-            </div>
-            <div class="feat_row">
-                <div class="featured_img">
-                    <img src="pics/how_to_not_kill_urself.jpg">
-                    <h4>How Not to Kill Yourself: A Portrait of the Suicidal Mind</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/man'search_for_meaning.jpg">
-                    <h4>Man's Search for Meaning</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/ur_brain_on_art.jpg">
-                    <h4>Your brain on art</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
+                    // Tạo phần tử div.small_container
+                    var smallContainerDiv = document.createElement("div");
+                    smallContainerDiv.classList.add("small_container");
 
-                </div>
-                <div class="featured_img">
-                    <img src="pics/image3.jpg">
-                    <h4>Still Alice</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
+                    // Tạo phần tử h2.title_1
+                    var titleHeading = document.createElement("h2");
+                    titleHeading.classList.add("title_1");
+                    titleHeading.textContent = element;
 
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/the_perfect_child.jpg">
-                    <h4>The perfect child</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-                <div class="featured_img">
-                    <img src="pics/i_want_to_die_but.jpg">
-                    <h4>I Want to Die But I Want to Eat Tteokpokki</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="arrows1">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </div>
-        </div>
-    </div>
+                    // Tạo phần tử div.arrows (nút mũi tên trái)
+                    var arrowsDiv = document.createElement("div");
+                    arrowsDiv.classList.add("arrows");
+
+                    // Tạo phần tử i.fa.fa-angle-left (biểu tượng mũi tên trái)
+                    var leftArrowIcon = document.createElement("i");
+                    leftArrowIcon.classList.add("fa", "fa-angle-left");
+                    leftArrowIcon.setAttribute("aria-hidden", "true");
+
+                    // Thêm biểu tượng mũi tên trái vào div.arrows
+                    arrowsDiv.appendChild(leftArrowIcon);
+
+                    // Tạo phần tử div.feat_row
+                    var featRowDiv = document.createElement("div");
+                    featRowDiv.classList.add("feat_row");
+
+                    // Tạo phần tử div.arrows1 (nút mũi tên phải)
+                    var arrows1Div = document.createElement("div");
+                    arrows1Div.classList.add("arrows1");
+
+                    // Tạo phần tử i.fa.fa-angle-right (biểu tượng mũi tên phải)
+                    var rightArrowIcon = document.createElement("i");
+                    rightArrowIcon.classList.add("fa", "fa-angle-right");
+                    rightArrowIcon.setAttribute("aria-hidden", "true");
+
+                    // Thêm biểu tượng mũi tên phải vào div.arrows1
+                    arrows1Div.appendChild(rightArrowIcon);
+
+                    // Gắn các phần tử con vào phần tử cha
+                    smallContainerDiv.appendChild(titleHeading);
+                    smallContainerDiv.appendChild(arrowsDiv);
+                    smallContainerDiv.appendChild(featRowDiv);
+                    smallContainerDiv.appendChild(arrows1Div);
+
+                    categoriesDiv.appendChild(smallContainerDiv);
+
+                    // Gắn div.categories vào body
+                    document.body.appendChild(categoriesDiv);
+
+                })
+                genres.forEach((element, index) => {
+                    createBookList(element, index);
+                });
+
+                console.log(genres);
+            } catch (error) {
+                throw new Error('Failed to fetch book list');
+            }
+
+            async function createBookList(genre, index = 0) {
+                try {
+
+                    const bookContainerList = document.querySelectorAll(".feat_row");
+                    const featured = bookContainerList[index];
+
+                    const featuredBookList = await getBookList(genre, "genre");
+
+                    featuredBookList.forEach((bookElement) => {
+                        featured.appendChild(bookElement);
+                    });
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+        });
+    </script>
 
 
 </body>

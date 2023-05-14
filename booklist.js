@@ -87,7 +87,7 @@ async function getBookList(id, type = 'list') {
 
 async function getUserBookList() {
     const url = 'getBooks.php';
-    const params = 'id=' + localStorage.getItem("id") + '&type=lit';
+    const params = 'id=' + localStorage.getItem("id") + '&type=user';
 
     try {
         const response = await fetch(url, {

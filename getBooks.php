@@ -20,6 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else if ($type == "search") {
         $bookList = getBookListByName($id);
         echo json_encode($bookList);
+    } else if ($type == "genre") {
+        $genre = getBookListByGenre($id);
+        echo json_encode($genre);
+    } else if ($type == "allgenre") {
+        $genre = getAllGenre();
+        echo json_encode($genre);
     } else {
         $userBookListId = getUserBookList();
         $userBookList = getBookListById($userBookListId);
@@ -103,3 +109,28 @@ function getBookListByName($name)
     $sql = "SELECT * FROM books WHERE title LIKE '%$name%'";
     return getBookListFromQuery($sql);
 }
+
+function getBookListByGenre($genre)
+{
+    global $conn;
+    $genre = $conn->real_escape_string($genre);
+    $sql = "SELECT * FROM books WHERE genre = '$genre'";
+    return getBookListFromQuery($sql);
+}
+
+function getAllGenre()
+{
+    global $conn;
+    $sql = "SELECT genre, COUNT(*) as book_count FROM books GROUP BY genre ORDER BY book_count DESC";
+    $result = $conn->query($sql);
+    $genreList = array();
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $genreList[] = $row["genre"];
+        }
+    }
+
+    return $genreList;
+}
+
