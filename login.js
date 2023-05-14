@@ -19,7 +19,7 @@ function clearInputError(inputElement) {
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login");
     const registerForm = document.querySelector("#createAccount");
-    let hasError = false; // check if there is any error in sign up form
+    let hasError = [false, false, false]; // check if there is any error in sign up form
 
     document.querySelector("#linkCreateAccount").addEventListener("click", e => {
         e.preventDefault();
@@ -64,7 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
     registerForm.addEventListener("submit", e => {
         e.preventDefault();
 
-        if (hasError) return;
+        if (hasError.some(error => error)) {
+            return;
+        }
 
         var username = document.getElementById("signupUsername").value;
         var password = document.getElementById("signupPassword").value;
@@ -94,27 +96,29 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".form-input").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
             if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
-                setInputError(inputElement, "Username must be at least 10 character length");
-                hasError = true;
+                setInputError(inputElement, "Username must be at least 10 characters long");
+                hasError[0] = true;
             }
 
             if (e.target.id === "signupPassword" && e.target.value.length > 0 && e.target.value.length < 8) {
-                setInputError(inputElement, "Password must be at least 8 character length");
-                hasError = true;
+                setInputError(inputElement, "Password must be at least 8 characters long");
+                hasError[1] = true;
             }
 
             if (e.target.id === "signupEmail" && e.target.value.length > 0) {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(e.target.value)) {
                     setInputError(inputElement, "Invalid email format");
-                    hasError = true;
+                    hasError[2] = true;
                 }
             }
         });
 
         inputElement.addEventListener("input", e => {
             clearInputError(inputElement);
-            hasError = false;
-        })
+            const inputIndex = Array.from(document.querySelectorAll(".form-input")).indexOf(inputElement);
+            hasError[inputIndex] = false;
+        });
     });
+
 });
