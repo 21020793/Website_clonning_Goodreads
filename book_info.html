@@ -47,7 +47,7 @@
     <div class="left_still_container">
         <div class="left_container">
             <img id="book_image" />
-            <button>Want to read!</button>
+            <button id="add_to_book_list_button">Add to your book list!</button>
             <div class="rating_box">
                 <div class="stars">
                     <i class="fa fa-star"></i>
@@ -215,6 +215,35 @@
         }
 
         setBookDetails(bookId);
+
+        var wantToReadButton = document.getElementById("add_to_book_list_button");
+
+        // Sự kiện click cho nút "Want to read!"
+        wantToReadButton.addEventListener('click', async function () {
+            console.log("Want to read button clicked!");
+            const url = 'addToUserBookList.php';
+            const params = 'book_id=' + bookId + '&account_id=' + localStorage.getItem("id");
+            console.log(params);
+
+            try{
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+                    },
+                    body: params
+                });
+
+                if(!response.ok){
+                    throw new Error("Error when adding book to user book list");
+                }
+
+                const responseText = await response.text();
+                console.log(responseText);
+            }catch(error){
+                console.log(error);
+            }
+        });
     </script>
 
 </body>
