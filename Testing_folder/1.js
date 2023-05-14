@@ -3,7 +3,7 @@ const currentUser = {
 	username: localStorage.getItem("username"),
 };
 const comments = [];
-const user_review = {};
+let user_review = {};
 
 function appendFrag(frag, parent) {
 	var children = [].slice.call(frag.childNodes, 0);
@@ -131,23 +131,26 @@ const createCommentNode = (commentObject) => {
 	commentNode.querySelector(".usr-name").textContent =
 		commentObject.user.username;
 	commentNode.querySelector(".usr-img").src = commentObject.user.image;
-	commentNode.querySelector(".score-number").textContent = commentObject.score;
+	const scoreNumberElement = commentNode.querySelector(".score-number");
+	if (commentObject.score === 0) {
+		scoreNumberElement.style.display = "none";
+	}
 	commentNode.querySelector(".cmnt-at").textContent = commentObject.createdAt;
 	commentNode.querySelector(".c-body").textContent = commentObject.content;
 	if (commentObject.replyingTo)
 		commentNode.querySelector(".reply-to").textContent =
 			"@" + commentObject.replyingTo;
 
-	commentNode.querySelector(".score-plus").addEventListener("click", () => {
-		commentObject.score++;
-		initComments();
-	});
+	// commentNode.querySelector(".score-plus").addEventListener("click", () => {
+	// 	commentObject.score++;
+	// 	initComments();
+	// });
 
-	commentNode.querySelector(".score-minus").addEventListener("click", () => {
-		commentObject.score--;
-		if (commentObject.score < 0) commentObject.score = 0;
-		initComments();
-	});
+	// commentNode.querySelector(".score-minus").addEventListener("click", () => {
+	// 	commentObject.score--;
+	// 	if (commentObject.score < 0) commentObject.score = 0;
+	// 	initComments();
+	// });
 	if (commentObject.user.username == currentUser.username) {
 		commentNode.querySelector(".comment").classList.add("this-user");
 		commentNode.querySelector(".delete").addEventListener("click", () => {
