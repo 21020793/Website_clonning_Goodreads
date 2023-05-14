@@ -72,11 +72,8 @@
 
         <p class="summary"> </p>
         <div class="genres">
-            <!---Get information from database-->
             Genres:
-            <a href="">Nonfiction</a>
-            <a href="">Psychology</a>
-            <a href="">Self Help</a>
+            <a id="book_genre" href="genres.html"></a>
         </div>
 
         <div class="categories">
@@ -194,6 +191,7 @@
         const bookRate = document.querySelector(".rate");
         const bookRatePoint = document.getElementById("book_rate_point");
         const bookRateStar = document.getElementById("book_rate_star");
+        const bookGenre = document.getElementById("book_genre");
 
         function displayBook(book) {
             bookImage.src = book.image;
@@ -202,6 +200,7 @@
             bookSummary.textContent = book.description;
             bookRatePoint.textContent = book.rate;
             bookRateStar.appendChild(createStarRate(book.rate));
+            bookGenre.textContent = book.genre;
         }
 
         async function setBookDetails(bookId) {
@@ -225,7 +224,7 @@
             const params = 'book_id=' + bookId + '&account_id=' + localStorage.getItem("id");
             console.log(params);
 
-            try{
+            try {
                 const response = await fetch(url, {
                     method: 'POST',
                     headers: {
@@ -234,13 +233,13 @@
                     body: params
                 });
 
-                if(!response.ok){
+                if (!response.ok) {
                     throw new Error("Error when adding book to user book list");
                 }
 
                 const responseText = await response.text();
                 console.log(responseText);
-            }catch(error){
+            } catch (error) {
                 console.log(error);
             }
         });
