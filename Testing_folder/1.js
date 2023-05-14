@@ -30,6 +30,13 @@ const addComment = async (body, parentId, replyTo = undefined) => {
 		});
 		if (!response.ok) throw new Error("Error adding comment");
 		await getReviewsByBookId(bookId);
+		response.json().then(data => {
+			if (data.status == "success") {
+				setBookDetails(bookId);
+			}
+		}).catch(error => {
+			console.log(error);
+		});
 	} catch (error) {
 		console.log(error);
 	}
@@ -49,6 +56,13 @@ const deleteComment = async (commentObject) => {
 		});
 		if (!response.ok) throw new Error("Error adding comment");
 		await getReviewsByBookId(bookId);
+		response.json().then(data => {
+			if (data.status == "success") {
+				setBookDetails(bookId);
+			}
+		}).catch(error => {
+			console.log(error);
+		});
 	} catch (error) {
 		console.log(error);
 	}
@@ -69,6 +83,13 @@ const updateComment = async (commentId, content) => {
 		});
 		if (!response.ok) throw new Error("Error updating comment");
 		await getReviewsByBookId(bookId);
+		response.json().then(data => {
+			if (data.status == "success") {
+				setBookDetails(bookId);
+			}
+		}).catch(error => {
+			console.log(error);
+		});
 		console.log(response);
 	} catch (error) {
 		console.log(error);
@@ -241,6 +262,7 @@ async function getReviewsByBookId(book_id) {
 		data.forEach((element) => {
 			comments.push(element);
 		});
+		console.log(comments);
 		initComments();
 	} catch (error) {
 		console.log(error);
@@ -251,7 +273,8 @@ getReviewsByBookId(bookId);
 
 async function getUserReviews(book_id) {
 	const url = "Testing_folder/get_comments.php";
-	const params = 'type=review_user&id=' + book_id + '&comment_limit=' + 1;
+	const params = 'type=review_user&id=' + book_id + '&comment_limit=' + 1 + '&account_id=' + localStorage.getItem("id");
+	console.log(params);
 
 	try {
 		const response = await fetch(url, {
@@ -269,9 +292,12 @@ async function getUserReviews(book_id) {
 		if (data == "fail") {
 			return;
 		}
-		user_review = await response.json();
-		
+		console.log(data);
+		// data.replies = [];
+		user_review = data;
 	} catch (error) {
 		console.log(error);
 	}
 };
+
+getUserReviews(bookId);

@@ -19,6 +19,9 @@ function updateRating($bookId)
     $stmt = $conn->prepare("UPDATE Books SET rating = ? WHERE book_id = ?");
     $stmt->bind_param("di", $average_rating, $bookId);
     $stmt->execute();
+
+    // trả về đánh giá trung bình
+    return $average_rating;
 }
 
 function getBookId()

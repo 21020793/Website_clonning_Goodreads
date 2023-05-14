@@ -63,13 +63,13 @@ nav ul {
     background: antiquewhite;
 }
 
-.searchbar{
+.searchbar {
     width: 100%;
     display: inline-flex;
     max-width: 300px;
 }
 
-.searchbar_input{
+.searchbar_input {
     padding: 10px;
     outline: none;
     border: 1px solid rgb(4, 147, 101);
@@ -79,16 +79,16 @@ nav ul {
     font-family: 'Poppins', sans-serif;
 }
 
-.searchbar_input:focus{
+.searchbar_input:focus {
     background: white;
     box-shadow: 0 0 2px #8cc6ba;
 }
 
-.searchbar_input::placeholder{
+.searchbar_input::placeholder {
     color: #84a79f;
 }
 
-.searchbar_button{
+.searchbar_button {
     width: 40px;
     background: rgb(4, 147, 101);
     color: white;
@@ -102,8 +102,8 @@ nav ul {
     user-select: none;
 }
 
-.searchbar_button:active{
-    box-shadow: 0 0 30px rgba(0, 0 , 0, 0.25);
+.searchbar_button:active {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
 }
 
 

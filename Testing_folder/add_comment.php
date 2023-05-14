@@ -38,9 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->affected_rows > 0) {
             // Thêm comment hoặc review thành công, commit transaction
-            updateRating($book_id);
+            $average_rating = updateRating($book_id);
             $conn->commit();
-            echo json_encode(["status" => "success"]);
+            echo json_encode(["status" => "success", "average_rating" => $average_rating]);
         } else {
             // Thêm comment hoặc review không thành công, rollback transaction
             $conn->rollback();

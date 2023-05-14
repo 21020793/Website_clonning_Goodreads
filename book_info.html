@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet" />
-    <script src="Testing_folder/1.js" defer></script>
     <script src="script.js" defer></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,7 +56,6 @@
                     <i class="fa fa-star"></i>
                 </div>
             </div>
-            <p>Rate this book!</p>
         </div>
     </div>
 
@@ -151,7 +149,7 @@
                     <!--commentS wrapper-->
                     <div class="reply-input container">
                         <img src="images/avatars/image-juliusomo.webp" alt="" class="usr-img" />
-                        <textarea class="cmnt-input" placeholder="Add a comment..."></textarea>
+                        <textarea class="cmnt-input" placeholder="Add a review..."></textarea>
                         <button class="bu-primary">SEND</button>
                     </div>
                     <!--reply input-->
@@ -199,6 +197,7 @@
             bookAuthor.textContent = book.author;
             bookSummary.textContent = book.description;
             bookRatePoint.textContent = book.rate;
+            bookRateStar.innerHTML = "";
             bookRateStar.appendChild(createStarRate(book.rate));
             bookGenre.textContent = book.genre;
         }
@@ -244,6 +243,7 @@
             }
         });
     </script>
+    <script src="Testing_folder/1.js" defer></script>
 
 </body>
 

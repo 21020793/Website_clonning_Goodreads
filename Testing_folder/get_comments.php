@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $conn->prepare("SELECT r.*, a.username FROM reviews AS r JOIN accounts AS a ON r.account_id = a.account_id WHERE r.parent_comment_id = ? ORDER BY r.review_time ASC LIMIT ?");
     } else if ($type == "review_user") {
         // Lấy thông tin review của user cho quyển sách
-        $account_id = $_SESSION["account_id"];
+        $account_id = $_POST["account_id"];
         $stmt = $conn->prepare("SELECT r.*, a.username FROM reviews AS r JOIN accounts AS a ON r.account_id = a.account_id WHERE r.account_id = '$account_id' AND r.book_id = ? LIMIT ?");
     } else {
         // Trả về fail và thoát không xử lý
