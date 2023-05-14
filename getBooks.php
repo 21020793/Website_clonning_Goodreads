@@ -17,6 +17,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else if ($type == "list") {
         $bookList = getBookListById($id);
         echo json_encode($bookList);
+    } else if ($type == "search") {
+        $bookList = getBookListByName($id);
+        echo json_encode($bookList);
     } else {
         $userBookListId = getUserBookList();
         $userBookList = getBookListById($userBookListId);
@@ -91,4 +94,12 @@ function getBookListFromQuery($sql)
     }
 
     return $bookList;
+}
+
+function getBookListByName($name)
+{
+    global $conn;
+    $name = $conn->real_escape_string($name);
+    $sql = "SELECT * FROM books WHERE title LIKE '%$name%'";
+    return getBookListFromQuery($sql);
 }

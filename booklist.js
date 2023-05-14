@@ -53,9 +53,9 @@ function createBookElements(book) {
     return bookElement;
 }
 
-async function getBookList(id) {
+async function getBookList(id, type = 'list') {
     const url = 'getBooks.php';
-    const params = 'id=' + id + '&type=list';
+    const params = 'id=' + id + '&type=' + type;
 
     try {
         const response = await fetch(url, {
