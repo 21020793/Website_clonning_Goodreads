@@ -53,7 +53,7 @@ function createBookElements(book) {
     return bookElement;
 }
 
-async function getBookList(id, type = 'list', limit = 10) {
+async function getBookList(id, type = 'list', limit = 5) {
     const url = 'getBooks.php';
     const params = 'id=' + id + '&type=' + type + '&limit=' + limit;
 
