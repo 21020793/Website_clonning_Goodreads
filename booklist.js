@@ -55,7 +55,7 @@ function createBookElements(book) {
 
 async function getBookList(id, type = 'list', limit = 10) {
     const url = 'getBooks.php';
-    const params = 'id=' + id + '&type=' + type + '&limit=10';
+    const params = 'id=' + id + '&type=' + type + '&limit=' + limit;
 
     try {
         const response = await fetch(url, {
