@@ -17,7 +17,7 @@ const addComment = async (body, parentId, replyTo = undefined) => {
 	const content = body;
 	const rating = localStorage.getItem("rating");
 	const parent_comment_id = parentId;
-	const url = "Testing_folder/add_comment.php";
+	const url = "review_system/add_comment.php";
 	const params = 'type=' + type + '&book_id=' + book_id + '&content=' + content + '&rating=' + rating + '&parent_comment_id=' + parent_comment_id;
 	console.log(params);
 	try {
@@ -43,7 +43,7 @@ const addComment = async (body, parentId, replyTo = undefined) => {
 };
 const deleteComment = async (commentObject) => {
 
-	const url = "Testing_folder/delete_review.php";
+	const url = "review_system/delete_review.php";
 	const params = 'review_id=' + commentObject.id + '&id' + localStorage.getItem("id");
 
 	try {
@@ -69,7 +69,7 @@ const deleteComment = async (commentObject) => {
 };
 
 const updateComment = async (commentId, content) => {
-	const url = "Testing_folder/update_comment.php";
+	const url = "review_system/update_comment.php";
 	const params = 'review_id=' + commentId + '&content=' + content + '&account_id=' + localStorage.getItem("id") + '&rating=' + localStorage.getItem("rating");
 	console.log(params);
 
@@ -242,7 +242,7 @@ cmntInput.querySelector(".bu-primary").addEventListener("click", () => {
 });
 
 async function getReviewsByBookId(book_id) {
-	const url = "Testing_folder/get_comments.php";
+	const url = "review_system/get_comments.php";
 	const params = 'type=book&id=' + book_id + '&comment_limit=' + 1000;
 
 	try {
@@ -275,7 +275,7 @@ async function getReviewsByBookId(book_id) {
 getReviewsByBookId(bookId);
 
 async function getUserReviews(book_id) {
-	const url = "Testing_folder/get_comments.php";
+	const url = "review_system/get_comments.php";
 	const params = 'type=review_user&id=' + book_id + '&comment_limit=' + 1 + '&account_id=' + localStorage.getItem("id");
 	console.log(params);
 

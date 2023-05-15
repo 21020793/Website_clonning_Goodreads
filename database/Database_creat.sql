@@ -153,7 +153,191 @@ Reporter Cindy Thomas put Burke on the bestseller list, in her true-crime book a
 An obsessed fan is studying every detail-and committing fresh horrors that carry Burke's signature.
 
 Now Lindsay's tracking an elusive suspect, one who's penning a deadly playbook featuring Cindy's name in blood-red ink.",
-"pics/image18.jpg", 20230513);
+"pics/image18.jpg", 20230513),
+("The House Is on Fire", "Rachel Beanland", "Historical Fiction", 0,
+"The author of Florence Adler Swims Forever returns with a masterful work of historical fiction about an incendiary tragedy that shocked a young nation and tore apart a community in a single night—told from the perspectives of four people whose actions during the inferno changed the course of history.
+
+Richmond, Virginia 1811. It’s the height of the winter social season. The General Assembly is in session, and many of Virginia’s gentleman planters, along with their wives and children, have made the long and arduous journey to the capital in hopes of whiling away the darkest days of the year. At the city’s only theater, the Charleston-based Placide & Green Company puts on two plays a night to meet the demand of a populace that’s done looking for enlightenment in a church.
+
+On the night after Christmas, the theater is packed with more than six hundred holiday revelers. In the third-floor boxes, sits newly widowed Sally Henry Campbell, who is glad for any opportunity to relive the happy times she shared with her husband. One floor away, in the colored gallery, Cecily Patterson doesn’t give a whit about the play but is grateful for a four-hour reprieve from a life that has recently gone from bad to worse. Backstage, young stagehand Jack Gibson hopes that, if he can impress the theater’s managers, he’ll be offered a permanent job with the company. And on the other side of town, blacksmith Gilbert Hunt dreams of one day being able to bring his wife to the theater, but he’ll have to buy her freedom first.
+
+When the theater goes up in flames in the middle of the performance, Sally, Cecily, Jack, and Gilbert make a series of split-second decisions that will not only affect their own lives but those of countless others. And in the days following the fire, as news of the disaster spreads across the United States, the paths of these four people will become forever intertwined.
+
+Based on the true story of Richmond’s theater fire, The House Is on Fire offers proof that sometimes, in the midst of great tragedy, we are offered our most precious—and fleeting—chances at redemption.",
+"pics/image19.jpg", 20230513),
+("The Golden Doves", "Martha Hall Kelly", "Historical Fiction", 0,
+"Two former female spies, bound together by their past, risk everything to hunt down an infamous Nazi doctor in the aftermath of World War II—an extraordinary novel inspired by true events from the New York Times bestselling author of Lilac Girls
+
+American Josie Anderson and Parisian Arlette LaRue are thrilled to be working in the French resistance, stealing so many Nazi secrets that they become known as the Golden Doves, renowned across France and hunted by the Gestapo. Their courage will cost them everything. When they are finally arrested and taken to the Ravensbrück concentration camp, along with their loved ones, a reclusive Nazi doctor does unspeakable things to Josie’s mother, a celebrated Jewish singer who joined her daughter in Paris when the world seemed bright. And Arlette’s son is stolen from her, never to be seen again.
+
+A decade later the Doves fall headlong into a dangerous dual mission: Josie is working for U.S. Army intelligence and accepts an assignment to hunt down the infamous doctor, while a mysterious man tells Arlette he may have found her son. The Golden Doves embark on a quest across Europe and ultimately to French Guiana, discovering a web of terrible secrets, and must put themselves in grave danger to finally secure justice and protect the ones they love.
+
+Martha Hall Kelly has garnered acclaim for her stunning combination of empathy and research into the stories of women throughout history and for exploring the terrors of Ravensbrück. With The Golden Doves, she has crafted an unforgettable story about the fates of Nazi fugitives in the wake of World War II—and the unsung females spies who risked it all to bring them to justice.",
+"pics/image20.jpg", 20230513),
+("The Last Heir to Blackwood Library", "Hester Fox", "Historical Fiction", 0,
+"In post–World War I England, a young woman inherits a mysterious library and must untangle its powerful secrets…
+
+With the stroke of a pen, twenty-three-year-old Ivy Radcliffe becomes Lady Hayworth, owner of a sprawling estate on the Yorkshire moors. Ivy has never heard of Blackwood Abbey, or of the ancient bloodline from which she’s descended. With nothing to keep her in London since losing her brother in the Great War, she warily makes her way to her new home.
+
+The abbey is foreboding, the servants reserved and suspicious. But there is a treasure waiting behind locked doors: a magnificent library. Despite cryptic warnings from the staff, Ivy feels irresistibly drawn to its dusty shelves, where familiar works mingle with strange, esoteric texts. And she senses something else in the library too, a presence that seems to have a will of its own.  
+
+Rumors swirl in the village about the abbey’s previous owners, about ghosts and curses, and an enigmatic manuscript at the center of it all. And as events grow more sinister, it will be up to Ivy to uncover the library’s mysteries in order to reclaim her own story—before it vanishes forever.",
+"pics/image21.jpg", 20230513),
+("Ana María and the Fox", "Liana De la Rosa", "Romance", 0,
+"A forbidden love between a Mexican heiress and a shrewd British politician makes for a tantalizing Victorian season.
+
+Ana María Luna Valdés has strived to be the perfect daughter, the perfect niece, and the perfect representative of the powerful Luna familia. So, when Ana María is secretly sent to London with her sisters to seek refuge during the French occupation of Mexico, she experiences her first taste of freedom far from the judgmental eyes of her domineering father. If only she could ignore the piercing looks she receives across ballroom floors from the austere Mr. Fox.
+
+Gideon Fox elevated himself from the London gutters by chasing his burning desire for more: more opportunities, more choices. For everyone. Now as a member of Parliament, Gideon's on the cusp of securing the votes he needs to put forth a measure to abolish the Atlantic slave trade once and for all--a cause that is close to his heart as the grandson of a formerly enslaved woman. The charmingly vexing Ana María is a distraction he must ignore.
+
+But when Ana María finds herself in the crosshairs of a nefarious nobleman with his own political agenda, Gideon knows he must offer his hand as protection...but will this Mexican heiress win his heart as well?",
+"pics/image22.jpg", 20230513),
+("Only the Beautiful", "Susan Meissner", "Historical Fiction", 0,
+"A heartrending story about a young mother’s fight to keep her daughter, and the winds of fortune that tear them apart by the New York Times bestselling author of The Nature of Fragile Things and The Last Year of the War.
+
+California, 1938—When she loses her parents in an accident, sixteen-year-old Rosanne is taken in by the owners of the vineyard where she has lived her whole life as the vinedresser’s daughter. She moves into Celine and Truman Calvert’s spacious house with a secret, however—Rosie sees colors when she hears sound. She promised her mother she’d never reveal her little-understood ability to anyone, but the weight of her isolation and grief prove too much for her. Driven by her loneliness she not only breaks the vow to her mother, but in a desperate moment lets down her guard and ends up pregnant. Banished by the Calverts, Rosanne believes she is bound for a home for unwed mothers, and having lost her family she treasures her pregnancy as the chance for a future one. But she soon finds out she is not going to a home of any kind, but to a place far worse than anything she could have imagined.
+
+Austria, 1947—After witnessing firsthand Adolf Hitler’s brutal pursuit of hereditary purity—especially with regard to “different children”—Helen Calvert, Truman's sister, is ready to return to America for good. But when she arrives at her brother’s peaceful vineyard after decades working abroad, she is shocked to learn what really happened nine years earlier to the vinedresser’s daughter, a girl whom Helen had long ago befriended. In her determination to find Rosanne, Helen discovers that while the war had been won in Europe, there are still terrifying battles to be fought at home.",
+"pics/image23.jpg", 20230513),
+("Swan Light", "Phoebe Rowe", "Historical Fiction", 0,
+"A sweeping, emotional tale of hope and perseverance, Swan Light weaves together the stories of two people separated by a century but connected by family, purpose, and one extraordinary lighthouse.
+
+1913. Eighty-three-year-old Silvestre Swan has dedicated his life to the care of his Newfoundland lighthouse. His petition to relocate Swan Light from its precarious cliff’s edge is going unheard by town patriarch Cort Roland—that is, until a terrible storm brings an unlikely ally into Swan’s life. But is it too late for the stone lighthouse?
+
+2014. Marine archaeologist Mari Adams's attempts to fund her search for the notorious SS Californian are realized when she accepts a job to find the remains of Swan Light, rumored to have collapsed into the sea one hundred years ago. She teams up with salvager Julian Henry, and the pair unearth more than they bargained for in their search for the ruins. But when a group of treasure hunters threatens their mission, their hunt for the truth turns dangerous.
+
+As past and present collide, the secrets hiding on the ocean floor begin to surface. Can Mari find the answers she is looking for—and at what price?",
+"pics/image24.jpg", 20230513),
+("If Only You", "Chloe Liese", "Romance", 0,
+"Brace yourself for longing, laughter, and a swoony slow-burn in this brother’s best friend sports romance about scoring the love of your life when you least expect to.
+
+Ziggy
+
+I’m the youngest player on the National Soccer team, the baby of my family, and thoroughly sick of being underestimated, so I’ve decided to take matters into my own hands. Which is where my brother’s best friend and teammate, the infamous Sebastian Marchand, comes in. 
+ 
+Seb needs to rehab his reputation. I want to give mine an edge. So I propose a fake friendship with real benefits: spending time in the public eye, my good-girl image and his bad-boy notoriety rubbing off on each other. He’s my devious, dark-haired fantasy come to life, but his destructive ways make it easy to keep him in the (fake) friend zone. Or so I thought, until I start to see the heart of gold he’s been hiding beneath that sinister surface…
+
+Sebastian
+
+Like any self-respecting reprobate, I’ve been spiraling downward, and finally I’ve hit rock bottom. My hockey career and sponsorships are in jeopardy, and while I’m not ready to actually reform my ways, I’m happy to pretend that I have, to secure the life I’m on the brink of losing. 
+ 
+So when my best friend’s sister, Ziggy Bergman, proposes a public “friendship” to revamp our reputations, it’s an offer I can’t refuse. Up till now, I’ve stayed away from Ren’s sweet, shy little sister to avoid any risk of ruining my one good friendship. But I reassure myself there’s no risk in our scheme. I’ll fake a friendship with Ziggy, fix my reputation, and get back to hockey, the one and only thing I love. At least, it was, until what began as a transactional arrangement became the most loving relationship I’ve ever known.
+
+​If Only You is a brother’s best friend, (fake) friends with benefits to friends to lovers romance about a bighearted, quietly fierce soccer star on the autism spectrum, and a thoroughly unprincipled, almost irredeemable hockey player who has celiac disease. Complete with an absurd level of mutual pining, meddling family and friends, and a spicy slow burn, this standalone is the sixth in a series of novels about a Swedish-American family of five brothers, two sisters, and their wild adventures as they each find happily ever after.",
+"pics/image25.jpg", 20230513),
+("The Plus One", "Mazey Eddings", "Romance", 0,
+"Some facts are indisputable. The sun rises in the east, sets in the west. Gravity exits. Indira doesn’t like Jude. Jude doesn’t like Indira. But what happens when these childhood enemies find the only thing they can rely on is each other?
+
+On paper, Indira has everything together. An amazing job, a boyfriend, and a car. What more could a late twenty-something ask for? But when she walks in on her boyfriend in an amorous embrace with a stranger, that perfect on paper image goes up in flames.
+
+Jude has nothing together. A doctor that’s spent the last three years traveling the world to treat emergencies and humanitarian crises, a quick trip home for his best friend’s wedding has him struggling to readjust.
+
+Thrust into an elaborate (and ridiculously drawn out) wedding event that’s stressing Jude beyond belief and has Indira seeing her ex and his new girlfriend far more frequently than any human should endure, the duo strike a bargain to be each other’s fake dates to this wedding from hell. The only problem is, their forced proximity and fake displays of affection are starting to feel a bit… real, and both are left grappling with the idea that a situation that couldn’t be worse, is made a little better with the other around.
+
+What starts out as a fake wedding date turns into something these childhood enemies never expected in the next sparkling romantic comedy by Mazey Eddings.",
+"pics/image26.jpg", 20230513),
+("Divine Rivals", "Rebecca Ross", "Fantasy", 0,
+"When two young rival journalists find love through a magical connection, they must face the depths of hell, in a war among gods, to seal their fate forever.
+
+After centuries of sleep, the gods are warring again. But eighteen-year-old Iris Winnow just wants to hold her family together. Her mother is suffering from addiction and her brother is missing from the front lines. Her best bet is to win the columnist promotion at the Oath Gazette.
+
+To combat her worries, Iris writes letters to her brother and slips them beneath her wardrobe door, where they vanish—into the hands of Roman Kitt, her cold and handsome rival at the paper. When he anonymously writes Iris back, the two of them forge a connection that will follow Iris all the way to the front lines of battle: for her brother, the fate of mankind, and love.
+
+Shadow and Bone meets Lore in Rebecca Ross's Divine Rivals, an epic enemies-to-lovers fantasy novel filled with hope and heartbreak, and the unparalleled power of love.",
+"pics/image27.jpg", 20230513),
+("Forget Me Not", "Alyson Derrick", "Romance", 0,
+"A romantic ode to the strength of love and the power of choosing each other, against odds and obstacles, again and again.
+
+What would you do if you forgot the love of your life ever even existed?
+
+Stevie and Nora had a love. A secret, epic, once-in-a-lifetime kind of love. They also had a plan: to leave their small, ultra-conservative town and families behind after graduation and move to California, where they could finally stop hiding that love.
+
+But then Stevie has a terrible fall. And when she comes to, she can remember nothing of the last two years—not California, not coming to terms with her sexuality, not even Nora. Suddenly, Stevie finds herself in a life she doesn’t quite understand, one where she’s estranged from her parents, drifting away from her friends, lying about the hours she works, dating a boy she can’t remember crushing on, and headed towards a future that isn’t at all what her fifteen-year-old self would have envisioned.
+
+And Nora finds herself…forgotten. Can the two beat the odds a second time and find their way back together when “together” itself is just a lost memory?",
+"pics/image28.jpg", 20230513),
+("Bewitched", "Laura Thalassa", "Fantasy", 0,
+"Come to me, Empress …
+
+At age twenty, Selene Bowers desperately hopes to be accepted into Henbane Coven, an academy for young witches. Since one of the requirements for entry is to connect with her powers via a quest through the wilderness, Selene books a trip to South America. When a nefarious supernatural force tries to drag her plane from the sky, Selene's magic awakens to save her life―at a cost. Using her powers devours her memories, one by one.
+
+Worse, when Selene braves the jungle and discovers the source of the attack, she finds herself awakening an ancient evil, Memnon the Cursed, who mistakes Selene for his long-dead wife. The wife who betrayed him. Selene manages to escape and begin her studies at Henbane, but when Memnon turns up at the coven and witches are found dead across campus, Selene becomes entangled in a dangerous plot. Accused of the murders on the basis of her memory loss, Selene must rely on Memnon's help for answers―and his plans for her will change everything.",
+"pics/image29.jpg", 20230513),
+("The Do-Over", "Suzanne Park", "Romance", 0,
+"From the author of Loathe at First Sight and So We Meet Again, a fun rom-com about a young Korean-American woman having to return to college after discovering she’s a few credits shy of completing her degree—only to find one of her TAs is her old college boyfriend.
+
+Lily Lee is a bestselling author of the How to Be a Supernova At Work series, and her editor wants her to strike while the iron’s hot with a new book, How to Land the Perfect Job. But when Lily is offered a coveted position at a top firm, the employer background check reveals she’s short a few college credits and never actually completed her degree. Unbelievably, her worst nightmare has come true.
+
+Lily returns to her alma mater, reliving her senior year of college ten years later. She enrolls in classes, gets invited to frat parties, eats most of her meals with “dining dollars,” and to make things even more weird and chaotic, she discovers that her computer science TA is her old college boyfriend, Jake Cho.
+
+As Lily and Jake reconnect, she sees that her ex has done well for himself: the handsome, charming grad student appears to have his life together while Lily’s so close to losing her dream job opportunity and her book deal.
+
+Things aren't so simple the second time around.
+
+The Do-Over is a delightfully warm and hopeful story about second chances in love and life, and how the future we want may turn out far different than we imagined.",
+"pics/image30.jpg", 20230513),
+("Untethered Sky", "Fonda Lee", "Fantasy", 0,
+"From World Fantasy Award-winning author Fonda Lee comes Untethered Sky , an epic fantasy fable about the pursuit of obsession at all costs.
+
+A Most Anticipated in 2023 Pick for Polygon | Book Riot | Paste Magazine
+
+Ester’s family was torn apart when a manticore killed her mother and baby brother, leaving her with nothing but her father’s painful silence and a single, overwhelming need to kill the monsters that took her family.
+
+Ester’s path leads her to the King’s Royal Mews, where the giant rocs of legend are flown to hunt manticores by their brave and dedicated ruhkers. Paired with a fledgling roc named Zahra, Ester finds purpose and acclaim by devoting herself to a calling that demands absolute sacrifice and a creature that will never return her love. The terrifying partnership between woman and roc leads Ester not only on the empire’s most dangerous manticore hunt, but on a journey of perseverance and acceptance.",
+"pics/image31.jpg", 20230513),
+("Blood Debts", "Terry J. Benton-Walker", "Fantasy", 0,
+"Thirty years ago, a young woman was murdered, a family was lynched, and New Orleans saw the greatest magical massacre in its history. In the days that followed, a throne was stolen from a queen.
+
+On the anniversary of these brutal events, Clement and Cristina Trudeau—the sixteen-year-old twin heirs to the powerful, magical, dethroned family—are mourning their father and caring for their sick mother. Until, by chance, they discover their mother isn’t sick—she’s cursed. Cursed by someone on the very magic council their family used to rule. Someone who will come for them next.
+
+Cristina, once a talented and dedicated practitioner of Generational magic, has given up magic for good. An ancient spell is what killed their father and she was the one who cast it. For Clement, magic is his lifeline. A distraction from his anger and pain. Even better than the random guys he hooks up with.
+
+Cristina and Clement used to be each other’s most trusted confidant and friend, now they barely speak. But if they have any hope of discovering who is coming after their family, they’ll have to find a way to trust each other and their family's magic, all while solving the decades-old murder that sparked the still-rising tensions between the city’s magical and non-magical communities. And if they don't succeed, New Orleans may see another massacre. Or worse.
+
+Terry J. Benton-Walker's contemporary fantasy debut, Blood Debts, with powerful magical families, intergenerational curses, and deadly drama in New Orleans.",
+"pics/image32.jpg", 20230513),
+("Silver in the Bone", "Alexandra Bracken", "Fantasy", 0,
+"A series opener inspired by Arthurian legend and fueled by love, revenge, and pure adrenaline!
+
+Tamsin Lark didn’t ask to be a Hollower. As a mortal with no magical talent, she was never meant to break into ancient crypts, or compete with sorceresses and Cunningfolk for the treasures inside. But after her thieving foster father disappeared without so much as a goodbye, it was the only way to keep herself—and her brother, Cabell—alive.
+
+Ten years later, rumors are swirling that her guardian vanished with a powerful ring from Arthurian legend. A run-in with her rival Emrys ignites Tamsin’s hope that the ring could free Cabell from a curse that threatens both of them. But they aren’t the only ones who covet the ring.
+
+As word spreads, greedy Hollowers start circling, and many would kill to have it for themselves. While Emrys is the last person Tamsin would choose to partner with, she needs all the help she can get to edge out her competitors in the race for the ring. Together, they dive headfirst into a vipers’ nest of dark magic, exposing a deadly secret with the power to awaken ghosts of the past and shatter her last hope of saving her brother. . . .",
+"pics/image33.jpg", 20230513),
+("This Delicious Death", "Kayla Cottingham", "Young Adult", 0,
+"Four best friends, one music festival, and a cooler filled with human organs: this summer is about to get gory. ​​​
+
+Jennifer’s Body fans will clamor for this new sapphic horror standalone from New York Times bestselling author Kayla Cottingham.
+
+Three years ago, the melting of arctic permafrost released a pathogen of unknown origin into the atmosphere, causing a small percentage of people to undergo a transformation that became known as the Hollowing. Those impacted slowly became intolerant to normal food and were only able to gain sustenance by consuming the flesh of other human beings. Those who went without flesh quickly became feral, turning on their friends and family. However, scientists were able to create a synthetic version of human meat that would satisfy the hunger of those impacted by the Hollowing. As a result, humanity slowly began to return to normal, albeit with lasting fear and distrust for the people they'd pejoratively dubbed ghouls.
+
+Zoey, Celeste, Valeria, and Jasmine are all ghouls living in Southern California. As a last hurrah before their graduation they decided to attend a musical festival in the desert. They have a cooler filled with hard seltzers and SynFlesh and are ready to party.
+
+But on the first night of the festival Val goes feral, and ends up killing and eating a boy. As other festival guests start disappearing around them the girls soon discover someone is drugging ghouls and making them feral. And if they can't figure out how to stop it, and soon, no one at the festival is safe.",
+"pics/image34.jpg", 20230513),
+("Some Desperate Glory", "Emily Tesh", "Science Fiction", 0,
+"All her life Kyr has trained for the day she can avenge the murder of planet Earth. Raised in the bowels of Gaea Station alongside the last scraps of humanity, she readies herself to face the Wisdom, the all-powerful, reality-shaping weapon that gave the Majoda their victory over humanity.
+
+They are what’s left. They are what must survive. Kyr is one of the best warriors of her generation, the sword of a dead planet. But when Command assigns her brother to certain death and relegates her to the nursery to bear sons until she dies trying, she knows she must take humanity’s revenge into her own hands.
+
+Alongside her brother’s brilliant but seditious friend and a lonely, captive alien, she escapes from everything she’s ever known into a universe far more complicated than she was taught and far more wondrous than she could have imagined.
+
+A thrillingly told queer space opera about the wreckage of war, the family you find, and who you must become when every choice is stripped from you, Some Desperate Glory is award-winning author Emily Tesh’s highly anticipated debut novel.",
+"pics/image35.jpg", 20230513),
+("The Thick and the Lean", "Chana Porter", "Science Fiction", 0,
+"In Lambda Award finalist Chana Porter’s highly anticipated new novel, an aspiring chef, a cyberthief, and a kitchen maid each break free of a society that wants to constrain them.
+
+In the quaint religious town of Seagate, abstaining from food brings one closer to God.
+
+But Beatrice Bolano is hungry. She craves the forbidden: butter, flambé, marzipan. As Seagate takes increasingly extreme measures to regulate every calorie its citizens consume, Beatrice must make a choice: give up her secret passion for cooking or leave the only community she has known.
+
+Elsewhere, Reiko Rimando has left her modest roots for a college tech scholarship in the big city. A flawless student, she is set up for success...until her school pulls her funding, leaving her to face either a mountain of debt or a humiliating return home. But Reiko is done being at the mercy of the system. She forges a third path—outside of the law.
+
+With the guidance of a mysterious cookbook written by a kitchen maid centuries ago, Beatrice and Reiko each grasp for a life of freedom—something more easily imagined than achieved in a world dominated by catastrophic corporate greed.
+
+A startling fable of the entwined perils of capitalism, body politics, and the stigmas women face for appetites of every kind, Chana Porter’s profound new novel explores the reclamation of pleasure as a revolutionary act.",
+"pics/image36.jpg", 20230513);
 
 INSERT INTO accounts(username, email, password)
 VALUES

@@ -159,7 +159,7 @@
                     const bookContainerList = document.querySelectorAll(".feat_row");
                     const featured = bookContainerList[index];
 
-                    const featuredBookList = await getBookList(genre, "genre");
+                    const featuredBookList = await getBookList(genre, "genre", 100);
 
                     featuredBookList.forEach((bookElement) => {
                         featured.appendChild(bookElement);

@@ -53,7 +53,7 @@ function createBookElements(book) {
     return bookElement;
 }
 
-async function getBookList(id, type = 'list') {
+async function getBookList(id, type = 'list', limit = 10) {
     const url = 'getBooks.php';
     const params = 'id=' + id + '&type=' + type + '&limit=10';
 
@@ -74,7 +74,7 @@ async function getBookList(id, type = 'list') {
         const bookElements = [];
 
         bookList.forEach((book, index) => {
-            if (index > 4) return;
+            if (index > limit - 1) return;
             const bookElement = createBookElements(book);
             bookElements.push(bookElement);
         });
