@@ -18,14 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         // Sách đã có trong danh sách người dùng
-        echo "exists";
+        echo "The book is already in the user list";
     } else {
         $list_id = getListId($conn, $accountId);
         // Tiến hành thêm book_id và list_id vào bảng List_Books
         $stmt = $conn->prepare("INSERT INTO List_Books (list_id, book_id) VALUES (?, ?)");
         $stmt->bind_param("ii", $list_id, $bookId);
         $stmt->execute();
-        echo "success";
+        echo "Add success books to the list";
     }
 }
 

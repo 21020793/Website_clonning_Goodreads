@@ -74,7 +74,7 @@ async function getBookList(id, type = 'list') {
         const bookElements = [];
 
         bookList.forEach((book, index) => {
-            // if (index > 4) return;
+            if (index > 4) return;
             const bookElement = createBookElements(book);
             bookElements.push(bookElement);
         });

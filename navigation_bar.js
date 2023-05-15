@@ -7,7 +7,7 @@ if (localStorage.getItem("id")) {
     navItems = [
         { href: "index.html", text: "Home" },
         { href: "genres.html", text: "Genres" },
-        { href: "adding_book.html", text: "Add Book" },
+        // { href: "adding_book.html", text: "Add Book" },
         { href: "Book_shelf.html", text: localStorage.getItem("username") + "'s Books" },
         { href: "logout.html", text: "Log Out" }
     ];
